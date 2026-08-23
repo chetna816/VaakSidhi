@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - Literacy & Interactive Lessons</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Literacy Module • Native Scripts & Audio Pronunciation Practice ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="./index.html" class="nav-brand">
+      <span>VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./literacy.html" class="nav-link active">Literacy</a>
+      <a href="./speech.html" class="nav-link">Speech Practice</a>
+      <a href="./twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="./login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Filters Section -->
+    <div class="card card-pink" style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;">
+      <div>
+        <span class="cursive-font" style="font-size:20px;">interactive vocabulary & script lessons</span>
+        <h2 style="font-size:26px; color:#3d131f; margin:0;">Language Literacy Modules</h2>
+      </div>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <div>
+          <label style="font-size:12px; font-weight:800; color:#3d131f; display:block; margin-bottom:4px; text-transform:uppercase;">Language</label>
+          <select id="language-select" style="padding:10px 16px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
+            <option value="Marathi">Marathi (मराठी)</option>
+            <option value="Hindi">Hindi (हिंदी)</option>
+            <option value="Kannada">Kannada (ಕನ್ನಡ)</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="font-size:12px; font-weight:800; color:#3d131f; display:block; margin-bottom:4px; text-transform:uppercase;">Category</label>
+          <select id="category-filter" style="padding:10px 16px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
+            <option value="All">All Categories</option>
+            <option value="Greetings">Greetings</option>
+            <option value="Numbers">Numbers</option>
+            <option value="Family">Family</option>
+            <option value="Food">Food</option>
+            <option value="College">College</option>
+            <option value="Daily Routine">Daily Routine</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lesson List Container -->
+    <div id="lesson-list-container"></div>
+
+    <!-- Lesson Slide View Container -->
+    <div id="lesson-view-container" style="display:none;">
+      <div class="card card-cream">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; flex-wrap:wrap; gap:10px;">
+          <button id="back-to-lessons-btn" class="btn btn-secondary">← Back to Lessons</button>
+          <div style="text-align:right;">
+            <span id="lesson-progress-text" style="font-size:14px; font-weight:800; color:#3d131f;">Word 1 of 5</span>
+            <div class="progress-track" style="width:140px; margin-top:4px;">
+              <div id="lesson-progress-bar" class="progress-fill" style="background:#3d131f;"></div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="lesson-title" style="font-size:28px; color:#3d131f; margin-bottom:4px;">Lesson Title</h2>
+        <p id="lesson-description" style="color:#5c3240; margin-bottom:24px;">Lesson Description</p>
+
+        <!-- Flashcard Slide -->
+        <div class="polaroid-frame" style="background:#ffffff; border:2px dashed #3d131f; padding:36px 20px; text-align:center; margin-bottom:24px; position:relative;">
+          <div id="word-native" style="font-size:52px; font-weight:800; color:#3d131f; margin-bottom:6px; font-family:'Playfair Display', serif;">नमस्कार</div>
+          <div id="word-romanized" style="font-size:22px; font-weight:700; color:#78263e; margin-bottom:10px;">(Namaskar)</div>
+          <div id="word-meaning" style="font-size:22px; color:#280b14; margin-bottom:16px;">Hello / Greetings</div>
+          <p id="word-example" style="font-size:16px; color:#6b4c55; font-style:italic; margin-bottom:24px; background:#fef9c3; padding:8px 16px; border-radius:20px; display:inline-block; border:1px dashed #3d131f;">"नमस्कार, तुम्ही कसे आहात?"</p>
+
+          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+            <button id="pronounce-btn" class="btn btn-primary" style="padding:12px 28px; font-size:16px;">
+              🔊 Listen Native Audio
+            </button>
+            <button id="practice-speech-btn" class="btn btn-outline-dashed" style="padding:12px 28px; font-size:16px;">
+              🎙️ Practice Pronunciation
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Voice Pronunciation Practice Section -->
+        <div id="vocab-speech-practice-box" style="display:none; background:#fce7f3; border:2px dashed #3d131f; border-radius:20px; padding:24px; margin-bottom:24px; box-shadow:3px 3px 0px #3d131f;">
+          <h4 style="margin:0 0 12px 0; font-size:20px; color:#3d131f; font-family:'Playfair Display', serif;">🎙️ Interactive Pronunciation Test</h4>
+          
+          <!-- Workflow Pipeline -->
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:8px; margin-bottom:16px; text-align:center; font-size:12px;">
+            <div id="vstep-1" style="background:#fffdf0; padding:8px; border-radius:12px; font-weight:700; color:#3d131f; border:1px dashed #3d131f;">1. Mic Permission</div>
+            <div id="vstep-2" style="background:#fffdf0; padding:8px; border-radius:12px; font-weight:700; color:#3d131f; border:1px dashed #3d131f;">2. Capture Audio</div>
+            <div id="vstep-3" style="background:#fffdf0; padding:8px; border-radius:12px; font-weight:700; color:#3d131f; border:1px dashed #3d131f;">3. Convert to Text</div>
+            <div id="vstep-4" style="background:#fffdf0; padding:8px; border-radius:12px; font-weight:700; color:#3d131f; border:1px dashed #3d131f;">4. Speech Feedback</div>
+          </div>
+
+          <div style="text-align:center; padding:18px; background:#fffdf0; border-radius:16px; border:1.5px dashed #3d131f; margin-bottom:16px;">
+            <div id="vocab-rec-status" style="display:none; color:#dc2626; font-weight:800; margin-bottom:8px; font-size:15px;">
+              🔴 Recording live... Speak the word clearly into your microphone!
+            </div>
+            <div style="display:flex; justify-content:center; gap:12px;">
+              <button id="vocab-start-rec-btn" class="btn btn-primary" style="padding:10px 24px; font-size:15px;">
+                🎙️ Request Mic & Speak Word
+              </button>
+              <button id="vocab-stop-rec-btn" class="btn" style="background:#dc2626; color:#fff; border:2px solid #3d131f; padding:10px 24px; font-size:15px; display:none; border-radius:30px;">
+                ⏹️ Stop & Evaluate
+              </button>
+            </div>
+          </div>
+
+          <!-- Transcribed Text Container -->
+          <div style="margin-bottom:16px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; display:block; margin-bottom:4px; text-transform:uppercase;">Transcribed Speech Output:</label>
+            <div id="vocab-transcript-display" style="background:#ffffff; border:1.5px dashed #3d131f; padding:14px; border-radius:12px; font-size:16px; font-weight:700; color:#280b14; min-height:48px;">
+              Click 'Request Mic & Speak Word' to begin...
+            </div>
+          </div>
+
+          <!-- Speech Analysis & Feedback Report -->
+          <div id="vocab-analysis-result" style="display:none;"></div>
+        </div>
+
+        <!-- Controls -->
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <button id="prev-word-btn" class="btn btn-secondary">← Previous</button>
+          <button id="next-word-btn" class="btn btn-primary">Next Word →</button>
+          <button id="finish-lesson-btn" class="btn" style="background:#166534; color:#ffffff; border:2px solid #3d131f; display:none;">
+            🎉 Complete Lesson (+50 XP)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz View Container -->
+    <div id="quiz-view-container" style="display:none;">
+      <div class="card card-cream" style="max-width:720px; margin:0 auto;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+          <h2 id="quiz-title" style="font-size:24px; color:#3d131f; margin:0;">Lesson Quiz</h2>
+          <span id="quiz-progress-text" style="font-size:14px; font-weight:800; color:#3d131f;">Question 1 of 4</span>
+        </div>
+
+        <div class="progress-track" style="width:100%; height:12px; margin-bottom:24px;">
+          <div id="quiz-progress-bar" class="progress-fill" style="background:#3d131f;"></div>
+        </div>
+
+        <h3 id="question-text" style="font-size:22px; margin-bottom:24px; color:#280b14;">Question text goes here?</h3>
+
+        <div id="quiz-options-container"></div>
+
+        <div id="quiz-feedback" style="display:none;"></div>
+
+        <button id="next-question-btn" class="btn btn-primary" style="display:none; width:100%; margin-top:20px; padding:14px;">
+          Next Question →
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz Results Container -->
+    <div id="quiz-result-container" style="display:none;"></div>
+
+  </div>
+
+  <script src="./storage.js"></script>
+  <script src="./audioEngine.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./adaptive.js"></script>
+  <script src="./subscription.js"></script>
+  <script src="./literacy.js"></script>
+</body>
+</html>

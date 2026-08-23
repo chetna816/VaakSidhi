@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - Adaptive Learner Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Learner Dashboard • Skill Profiles, Progress Analytics & Adaptive Recommendations ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="./index.html" class="nav-brand">
+      <span> VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./literacy.html" class="nav-link">Literacy</a>
+      <a href="./speech.html" class="nav-link">Speech Practice</a>
+      <a href="./twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="./dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="./login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:16px;">
+      <div>
+        <span class="cursive-font" style="font-size:20px;">real connection, built to scale</span>
+        <h2 style="font-size:28px; color:#3d131f; margin:0;">📊 Adaptive Learner Dashboard</h2>
+      </div>
+      
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:8px; background:#fffdf0; border:1.5px dashed #3d131f; padding:8px 16px; border-radius:30px; box-shadow:2px 2px 0px #3d131f;">
+          <span style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase;">Language:</span>
+          <select id="dash-language-select" style="border:none; background:transparent; font-weight:800; color:#3d131f; outline:none; font-size:14px; cursor:pointer;">
+            <option value="Marathi">Marathi</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Kannada">Kannada</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+
+        <button id="reset-progress-btn" class="btn" style="background:#fee2e2; color:#991b1b; font-size:13px; font-weight:800; border:1.5px dashed #991b1b; padding:8px 16px; border-radius:30px; cursor:pointer;">
+          🔄 Reset Progress
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid-4" style="margin-bottom:28px;">
+      <div class="polaroid-frame" style="padding:20px; text-align:left;">
+        <span style="font-size:28px;">⭐</span>
+        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Total XP</div>
+        <div id="dash-total-xp" style="font-size:24px; font-weight:800; color:#3d131f;">0 XP</div>
+        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">xoxo, XP</div>
+      </div>
+
+      <div class="polaroid-frame tilt-right" style="padding:20px; text-align:left;">
+        <span style="font-size:28px;">🛡️</span>
+        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Current Level</div>
+        <div id="dash-current-level" style="font-size:24px; font-weight:800; color:#3d131f;">Level 1</div>
+        <div id="dash-level-title" style="font-size:13px; color:#78263e; font-weight:800;">Beginner</div>
+      </div>
+
+      <div class="polaroid-frame tilt-left" style="padding:20px; text-align:left;">
+        <span style="font-size:28px;">🔥</span>
+        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Daily Streak</div>
+        <div id="dash-streak-count" style="font-size:24px; font-weight:800; color:#3d131f;">0 Days</div>
+        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">keep burning!</div>
+      </div>
+
+      <div class="polaroid-frame" style="padding:20px; text-align:left; background:#fffdf0;">
+        <span style="font-size:28px;">🎙️</span>
+        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Daily Speaking Goal</div>
+        <div id="dash-speaking-goal-text" style="font-size:20px; font-weight:800; color:#706638; margin-top:2px;">0/1 Practice</div>
+        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">daily goal</div>
+      </div>
+    </div>
+
+    <!-- Section: Subscription Status & Daily Limits Card -->
+    <div id="subscriptionStatusCard"></div>
+
+    <!-- Section: Personalized Adaptive Practice Recommendation Card -->
+    <div id="recommendedPractice"></div>
+
+    <!-- Section: Cultural Passport & Regional Stamps -->
+    <div id="culturalPassport"></div>
+
+    <!-- Section: Multilingual Skill Progress Profile -->
+    <div id="languageSkillProfile"></div>
+
+    <!-- Section: Speaking Improvement & Performance -->
+    <div id="speakingImprovement"></div>
+
+    <!-- Detailed Performance Grid -->
+    <div class="grid-2" style="margin-bottom:28px;">
+      <div class="card card-cream" style="margin:0;">
+        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">🧠 Quiz Performance</h3>
+        <div style="display:flex; justify-content:space-between; margin-bottom:16px; background:#ffffff; border:1.5px dashed #3d131f; padding:14px; border-radius:16px;">
+          <div>
+            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Quizzes Completed</span>
+            <div id="dash-quizzes-count" style="font-size:22px; font-weight:800; color:#3d131f;">0</div>
+          </div>
+          <div>
+            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Avg Accuracy</span>
+            <div id="dash-avg-quiz-score" style="font-size:22px; font-weight:800; color:#1e40af;">0%</div>
+          </div>
+        </div>
+        <canvas id="quiz-chart-canvas" width="450" height="150" style="width:100%; height:150px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
+      </div>
+
+      <div class="card card-pink" style="margin:0;">
+        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">🎙️ Speech Evaluation History</h3>
+        <div style="display:flex; justify-content:space-between; margin-bottom:16px; background:#ffffff; border:1.5px dashed #3d131f; padding:14px; border-radius:16px;">
+          <div>
+            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Speaking Practices</span>
+            <div id="dash-speech-count" style="font-size:22px; font-weight:800; color:#3d131f;">0</div>
+          </div>
+          <div>
+            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Avg Speech Score</span>
+            <div id="dash-avg-speech-score" style="font-size:22px; font-weight:800; color:#166534;">0/100</div>
+          </div>
+        </div>
+        <canvas id="speech-chart-canvas" width="450" height="150" style="width:100%; height:150px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
+      </div>
+    </div>
+
+    <!-- Canvas Charts & Activity Feed Row -->
+    <div class="grid-2" style="margin-bottom:28px;">
+      <div class="card card-blue" style="margin:0;">
+        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">📈 XP Progress & Goals</h3>
+        <canvas id="xp-chart-canvas" width="450" height="100" style="width:100%; height:100px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px; margin-bottom:16px;"></canvas>
+        <canvas id="activity-chart-canvas" width="450" height="100" style="width:100%; height:100px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
+      </div>
+
+      <div class="card card-cream" style="margin:0;">
+        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">📜 Recent Activity Log</h3>
+        <div id="dash-activity-feed" style="max-height:240px; overflow-y:auto; padding-right:5px;"></div>
+      </div>
+    </div>
+
+    <!-- Achievements Grid -->
+    <div class="card card-pink">
+      <h3 style="font-size:24px; margin-bottom:18px; color:#3d131f;">🏆 Badges & Achievements</h3>
+      <div id="dash-achievements-container" class="grid-3"></div>
+    </div>
+
+  </div>
+
+  <script src="./storage.js"></script>
+  <script src="./audioEngine.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./adaptive.js"></script>
+  <script src="./subscription.js"></script>
+  <script src="./dashboard.js"></script>
+</body>
+</html>

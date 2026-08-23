@@ -1,0 +1,402 @@
+[
+  {
+    "id": "marathi-intro-1",
+    "language": "Marathi",
+    "topic": "Self Introduction in Marathi",
+    "prompt": "माझे नाव राहुल आहे. मी संगणक शास्त्राचा विद्यार्थी आहे.",
+    "englishMeaning": "My name is Rahul. I am a computer science student.",
+    "expectedKeywords": ["नाव", "विद्यार्थी", "मी", "आहे"],
+    "phoneticHint": "Maaze naav Rahul aahe. Mee sanganak shastraacha vidyarthi aahe.",
+    "level": "Beginner"
+  },
+  {
+    "id": "marathi-greetings-2",
+    "language": "Marathi",
+    "topic": "Greeting a Friend",
+    "prompt": "नमस्कार मित्रा, तू कसा आहेस? आज आपण भेटूया.",
+    "englishMeaning": "Hello friend, how are you? Let us meet today.",
+    "expectedKeywords": ["नमस्कार", "मित्रा", "कसा", "भेटूया"],
+    "phoneticHint": "Namaskar mitra, too kasa aahes? Aaj aapan bhetuya.",
+    "level": "Beginner"
+  },
+  {
+    "id": "marathi-college-3",
+    "language": "Marathi",
+    "topic": "College Life",
+    "prompt": "माझे महाविद्यालय खूप मोठे आणि सुंदर आहे.",
+    "englishMeaning": "My college is very big and beautiful.",
+    "expectedKeywords": ["महाविद्यालय", "मोठे", "सुंदर", "आहे"],
+    "phoneticHint": "Maaze mahavidyalaya khoop mothe aani sundar aahe.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "marathi-hobbies-4",
+    "language": "Marathi",
+    "topic": "My Hobbies",
+    "prompt": "मला पुस्तके वाचायला आणि गाणी ऐकायला आवडते.",
+    "englishMeaning": "I like reading books and listening to music.",
+    "expectedKeywords": ["पुस्तके", "वाचायला", "गाणी", "आवडते"],
+    "phoneticHint": "Mala pustake vaachayala aani gaani aaikayala aavadte.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "marathi-weather-5",
+    "language": "Marathi",
+    "topic": "Weather Discussion",
+    "prompt": "आज हवामान खूप छान आणि आल्हाददायक आहे.",
+    "englishMeaning": "Today the weather is very pleasant and cool.",
+    "expectedKeywords": ["हवामान", "छान", "आल्हाददायक", "आहे"],
+    "phoneticHint": "Aaj havamaan khoop chhaan aani aalhaddayak aahe.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "marathi-food-6",
+    "language": "Marathi",
+    "topic": "Favorite Dish",
+    "prompt": "मला पुरणपोळी आणि गरम चहा खूप आवडतो.",
+    "englishMeaning": "I really like Puran Poli and hot tea.",
+    "expectedKeywords": ["पुरणपोळी", "गरम", "चहा", "आवडतो"],
+    "phoneticHint": "Mala puranpoli aani garam chaha khoop aavadto.",
+    "level": "Beginner"
+  },
+  {
+    "id": "marathi-project-7",
+    "language": "Marathi",
+    "topic": "Final Year Project",
+    "prompt": "वाक्सिद्धी हा माझा अंतिम वर्षाचा कृत्रिम बुद्धिमत्ता प्रकल्प आहे.",
+    "englishMeaning": "VaakSiddhi is my final year AI project.",
+    "expectedKeywords": ["वाक्सिद्धी", "प्रकल्प", "अंतिम", "बुद्धिमत्ता"],
+    "phoneticHint": "VaakSiddhi ha maaza antim varshacha prakalpa aahe.",
+    "level": "Advanced"
+  },
+  {
+    "id": "marathi-travel-8",
+    "language": "Marathi",
+    "topic": "Travel Plans",
+    "prompt": "आम्ही सुट्टीत महाबळेश्वरला फिरायला जाणार आहोत.",
+    "englishMeaning": "We are going to visit Mahabaleshwar during holidays.",
+    "expectedKeywords": ["सुट्टीत", "महाबळेश्वर", "फिरायला", "जाणार"],
+    "phoneticHint": "Aamhi sutteet Mahabaleshwarla phirayla janaar aahot.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "marathi-daily-9",
+    "language": "Marathi",
+    "topic": "Daily Routine",
+    "prompt": "मी रोज सकाळी सहा वाजता उठतो आणि योगा करतो.",
+    "englishMeaning": "I wake up at six in the morning and do yoga.",
+    "expectedKeywords": ["सकाळी", "उठतो", "योगा", "करतो"],
+    "phoneticHint": "Mee roj sakaali saha vaajta uthto aani yoga karto.",
+    "level": "Beginner"
+  },
+  {
+    "id": "marathi-technology-10",
+    "language": "Marathi",
+    "topic": "Technology & AI",
+    "prompt": "तंत्रज्ञानामुळे आपले जीवन सोपे आणि वेगवान झाले आहे.",
+    "englishMeaning": "Technology has made our life easy and fast.",
+    "expectedKeywords": ["तंत्रज्ञान", "जीवन", "सोपे", "वेगवान"],
+    "phoneticHint": "Tantrajnanamule aaple jeevan sope aani vegwaan jhale aahe.",
+    "level": "Advanced"
+  },
+  {
+    "id": "hindi-intro-1",
+    "language": "Hindi",
+    "topic": "Self Introduction in Hindi",
+    "prompt": "मेरा नाम राहुल है। मैं कंप्यूटर साइंस का छात्र हूं।",
+    "englishMeaning": "My name is Rahul. I am a computer science student.",
+    "expectedKeywords": ["नाम", "छात्र", "मैं", "हूं"],
+    "phoneticHint": "Mera naam Rahul hai. Main computer science ka छात्र hoon.",
+    "level": "Beginner"
+  },
+  {
+    "id": "hindi-greetings-2",
+    "language": "Hindi",
+    "topic": "Greeting Friends in Hindi",
+    "prompt": "नमस्ते दोस्त, आप कैसे हैं? आज मिलकर बहुत खुशी हुई।",
+    "englishMeaning": "Hello friend, how are you? Glad to meet you today.",
+    "expectedKeywords": ["नमस्ते", "दोस्त", "खुशी", "मिली"],
+    "phoneticHint": "Namaste dost, aap kaise hain? Aaj milkar bahut khushi hui.",
+    "level": "Beginner"
+  },
+  {
+    "id": "hindi-college-3",
+    "language": "Hindi",
+    "topic": "College Campus",
+    "prompt": "मेरा कॉलेज बहुत बड़ा और सुंदर है।",
+    "englishMeaning": "My college is very big and beautiful.",
+    "expectedKeywords": ["कॉलेज", "बड़ा", "सुंदर", "है"],
+    "phoneticHint": "Mera college bahut bada aur sundar hai.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "hindi-hobbies-4",
+    "language": "Hindi",
+    "topic": "My Hobbies",
+    "prompt": "मुझे पुस्तकें पढ़ना और संगीत सुनना पसंद है।",
+    "englishMeaning": "I like reading books and listening to music.",
+    "expectedKeywords": ["पुस्तकें", "पढ़ना", "संगीत", "पसंद"],
+    "phoneticHint": "Mujhe pustaken padhna aur sangeet sunna pasand hai.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "hindi-weather-5",
+    "language": "Hindi",
+    "topic": "Weather Talk",
+    "prompt": "आज मौसम बहुत सुहावना और ठंडा है।",
+    "englishMeaning": "Today the weather is very pleasant and cool.",
+    "expectedKeywords": ["मौसम", "सुहावना", "ठंडा", "है"],
+    "phoneticHint": "Aaj mausam bahut suhavana aur thanda hai.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "hindi-food-6",
+    "language": "Hindi",
+    "topic": "Favorite Food",
+    "prompt": "मुझे समोसा और गरम चाय बहुत पसंद है।",
+    "englishMeaning": "I really like Samosa and hot tea.",
+    "expectedKeywords": ["समोसा", "गरम", "चाय", "पसंद"],
+    "phoneticHint": "Mujhe samosa aur garam chaai bahut pasand hai.",
+    "level": "Beginner"
+  },
+  {
+    "id": "hindi-project-7",
+    "language": "Hindi",
+    "topic": "Project Overview",
+    "prompt": "वाक्सिद्धी मेरा अंतिम वर्ष का एआई भाषा प्रोजेक्ट है।",
+    "englishMeaning": "VaakSiddhi is my final year AI language project.",
+    "expectedKeywords": ["वाक्सिद्धी", "अंतिम", "प्रोजेक्ट", "भाषा"],
+    "phoneticHint": "VaakSiddhi mera antim varsh ka AI bhasha project hai.",
+    "level": "Advanced"
+  },
+  {
+    "id": "hindi-travel-8",
+    "language": "Hindi",
+    "topic": "Travel Plans",
+    "prompt": "हम छुट्टियों में मनाली घूमने जा रहे हैं।",
+    "englishMeaning": "We are going to visit Manali during vacations.",
+    "expectedKeywords": ["छुट्टियों", "मनाली", "घूमने", "जा रहे"],
+    "phoneticHint": "Hum chuttiyon mein Manali ghoomne ja rahe hain.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "hindi-daily-9",
+    "language": "Hindi",
+    "topic": "Daily Schedule",
+    "prompt": "मैं सुबह छह बजे उठता हूं और योग करता हूं।",
+    "englishMeaning": "I wake up at six in the morning and do yoga.",
+    "expectedKeywords": ["सुबह", "उठता", "योग", "करता"],
+    "phoneticHint": "Main subah chhah baje uthta hoon aur yoga karta hoon.",
+    "level": "Beginner"
+  },
+  {
+    "id": "hindi-technology-10",
+    "language": "Hindi",
+    "topic": "Technology Benefits",
+    "prompt": "तकनीक ने हमारे जीवन को बहुत सरल बना दिया है।",
+    "englishMeaning": "Technology has made our life very simple.",
+    "expectedKeywords": ["तकनीक", "जीवन", "सरल", "बना"],
+    "phoneticHint": "Takneek ne humare jeevan ko bahut saral bana diya hai.",
+    "level": "Advanced"
+  },
+  {
+    "id": "kannada-intro-1",
+    "language": "Kannada",
+    "topic": "Self Introduction in Kannada",
+    "prompt": "ನನ್ನ ಹೆಸರು ರಾಹುಲ್. ನಾನು ಕಂಪ್ಯೂಟರ್ ಸೈನ್ಸ್ ವಿದ್ಯಾರ್ಥಿ.",
+    "englishMeaning": "My name is Rahul. I am a computer science student.",
+    "expectedKeywords": ["ಹೆಸರು", "ವಿದ್ಯಾರ್ಥಿ", "ನಾನು", "ರಾಹುಲ್"],
+    "phoneticHint": "Nanna hesaru Rahul. Naanu computer science vidyarthi.",
+    "level": "Beginner"
+  },
+  {
+    "id": "kannada-greetings-2",
+    "language": "Kannada",
+    "topic": "Greeting a Friend",
+    "prompt": "ನಮಸ್ಕಾರ ಗೆಳೆಯ, ನೀನು ಹೇಗಿದ್ದೀಯ? ಇಂದು ಭೇಟಿಯಾಗೋಣ.",
+    "englishMeaning": "Hello friend, how are you? Let us meet today.",
+    "expectedKeywords": ["ನಮಸ್ಕಾರ", "ಗೆಳೆಯ", "ಹೇಗಿದ್ದೀಯ", "ಭೇಟಿಯಾಗೋಣ"],
+    "phoneticHint": "Namaskara geleya, neenu hegiddiya? Indu bhetiyagona.",
+    "level": "Beginner"
+  },
+  {
+    "id": "kannada-college-3",
+    "language": "Kannada",
+    "topic": "My College",
+    "prompt": "ನನ್ನ ಕಾಲೇಜು ತುಂಬಾ ದೊಡ್ಡದು ಮತ್ತು ಸುಂದರವಾಗಿದೆ.",
+    "englishMeaning": "My college is very big and beautiful.",
+    "expectedKeywords": ["ಕಾಲೇಜು", "ದೊಡ್ಡದು", "ಸುಂದರವಾಗಿದೆ"],
+    "phoneticHint": "Nanna kaleju thumba doddadu mattu sundaravagide.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "kannada-hobbies-4",
+    "language": "Kannada",
+    "topic": "Hobbies",
+    "prompt": "ನನಗೆ ಪುಸ್ತಕ ಓದಲು ಮತ್ತು ಹಾಡು ಕೇಳಲು ಇಷ್ಟ.",
+    "englishMeaning": "I like reading books and listening to songs.",
+    "expectedKeywords": ["ಪುಸ್ತಕ", "ಓದಲು", "ಹಾಡು", "ಇಷ್ಟ"],
+    "phoneticHint": "Nanage pustaka odalu mattu haadu kelalu ishta.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "kannada-weather-5",
+    "language": "Kannada",
+    "topic": "Weather Talk",
+    "prompt": "ಇಂದು ಹವಾಮಾನ ತುಂಬಾ ತಂಪಾಗಿದೆ ಮತ್ತು ಚೆನ್ನಾಗಿದೆ.",
+    "englishMeaning": "Today the weather is very cool and nice.",
+    "expectedKeywords": ["ಹವಾಮಾನ", "ತಂಪಾಗಿದೆ", "ಚೆನ್ನಾಗಿದೆ"],
+    "phoneticHint": "Indu havamaana thumba thampaagide mattu chennaagide.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "kannada-food-6",
+    "language": "Kannada",
+    "topic": "Favorite Food",
+    "prompt": "ನನಗೆ ಮಸಾಲೆ ದೋಸೆ ಮತ್ತು ಬಿಸಿ ಕಾಫಿ ತುಂಬಾ ಇಷ್ಟ.",
+    "englishMeaning": "I really like Masala Dosa and hot coffee.",
+    "expectedKeywords": ["ದೋಸೆ", "ಬಿಸಿ", "ಕಾಫಿ", "ಇಷ್ಟ"],
+    "phoneticHint": "Nanage masala dose mattu bisi coffee thumba ishta.",
+    "level": "Beginner"
+  },
+  {
+    "id": "kannada-project-7",
+    "language": "Kannada",
+    "topic": "Project Details",
+    "prompt": "ವಾಕ್ಸಿದ್ದಿ ನನ್ನ ಕೊನೆಯ ವರ್ಷದ ಎಐ ಭಾಷಾ ಯೋಜನೆಯಾಗಿದೆ.",
+    "englishMeaning": "VaakSiddhi is my final year AI language project.",
+    "expectedKeywords": ["ವಾಕ್ಸಿದ್ದಿ", "ವರ್ಷದ", "ಯೋಜನೆಯಾಗಿದೆ"],
+    "phoneticHint": "VaakSiddhi nanna koneya varshada AI bhasha yojaneyagide.",
+    "level": "Advanced"
+  },
+  {
+    "id": "kannada-travel-8",
+    "language": "Kannada",
+    "topic": "Travel Plans",
+    "prompt": "ನಾವು ರಜೆಯಲ್ಲಿ ಮೈಸೂರಿಗೆ ಹೋಗುತ್ತಿದ್ದೇವೆ.",
+    "englishMeaning": "We are going to Mysore during holidays.",
+    "expectedKeywords": ["ರಜೆಯಲ್ಲಿ", "ಮೈಸೂರಿಗೆ", "ಹೋಗುತ್ತಿದ್ದೇವೆ"],
+    "phoneticHint": "Naavu rajeyalli Mysurige hoguttiddeve.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "kannada-daily-9",
+    "language": "Kannada",
+    "topic": "Daily Routine",
+    "prompt": "ನಾನು ಬೆಳಿಗ್ಗೆ ಆರು ಗಂಟೆಗೆ ಏಳುತ್ತೇನೆ ಮತ್ತು ಯೋಗ ಮಾಡುತ್ತೇನೆ.",
+    "englishMeaning": "I wake up at six in the morning and do yoga.",
+    "expectedKeywords": ["ಬೆಳಿಗ್ಗೆ", "ಏಳುತ್ತೇನೆ", "ಯೋಗ"],
+    "phoneticHint": "Naanu beligge aaru gantege eluttene mattu yoga maduttene.",
+    "level": "Beginner"
+  },
+  {
+    "id": "kannada-technology-10",
+    "language": "Kannada",
+    "topic": "Technology Impact",
+    "prompt": "ತಂತ್ರಜ್ಞಾನವು ನಮ್ಮ ಜೀವನವನ್ನು ಸುಲಭಗೊಳಿಸಿದೆ.",
+    "englishMeaning": "Technology has made our life easier.",
+    "expectedKeywords": ["ತಂತ್ರಜ್ಞಾನವು", "ಜೀವನವನ್ನು", "ಸುಲಭಗೊಳಿಸಿದೆ"],
+    "phoneticHint": "Tantrajnanavu namma jeevanavannu sulabhagoliside.",
+    "level": "Advanced"
+  },
+  {
+    "id": "english-intro-1",
+    "language": "English",
+    "topic": "Professional Introduction",
+    "prompt": "My name is Rahul. I am a computer science student specializing in AI.",
+    "englishMeaning": "My name is Rahul. I am a computer science student specializing in AI.",
+    "expectedKeywords": ["name", "student", "computer", "specializing"],
+    "phoneticHint": "My name is Rahul. I am a computer science student specializing in AI.",
+    "level": "Beginner"
+  },
+  {
+    "id": "english-greetings-2",
+    "language": "English",
+    "topic": "Meeting a New Colleague",
+    "prompt": "Hello! It is a pleasure to meet you. Welcome to our campus.",
+    "englishMeaning": "Hello! It is a pleasure to meet you. Welcome to our campus.",
+    "expectedKeywords": ["hello", "pleasure", "meet", "welcome"],
+    "phoneticHint": "Hello! It is a pleasure to meet you. Welcome to our campus.",
+    "level": "Beginner"
+  },
+  {
+    "id": "english-college-3",
+    "language": "English",
+    "topic": "Campus Facilities",
+    "prompt": "Our college has a state-of-the-art computer lab and a vast library.",
+    "englishMeaning": "Our college has a state-of-the-art computer lab and a vast library.",
+    "expectedKeywords": ["college", "computer", "lab", "library"],
+    "phoneticHint": "Our college has a state-of-the-art computer lab and a vast library.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "english-hobbies-4",
+    "language": "English",
+    "topic": "Hobbies & Interests",
+    "prompt": "I enjoy reading books and practicing speech pronunciation every day.",
+    "englishMeaning": "I enjoy reading books and practicing speech pronunciation every day.",
+    "expectedKeywords": ["reading", "books", "practicing", "pronunciation"],
+    "phoneticHint": "I enjoy reading books and practicing speech pronunciation every day.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "english-weather-5",
+    "language": "English",
+    "topic": "Weather Commentary",
+    "prompt": "The weather today is exceptionally clear, pleasant, and sunny.",
+    "englishMeaning": "The weather today is exceptionally clear, pleasant, and sunny.",
+    "expectedKeywords": ["weather", "clear", "pleasant", "sunny"],
+    "phoneticHint": "The weather today is exceptionally clear, pleasant, and sunny.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "english-food-6",
+    "language": "English",
+    "topic": "Dining Experience",
+    "prompt": "I love drinking freshly brewed hot coffee and eating healthy snacks.",
+    "englishMeaning": "I love drinking freshly brewed hot coffee and eating healthy snacks.",
+    "expectedKeywords": ["drinking", "brewed", "coffee", "healthy"],
+    "phoneticHint": "I love drinking freshly brewed hot coffee and eating healthy snacks.",
+    "level": "Beginner"
+  },
+  {
+    "id": "english-project-7",
+    "language": "English",
+    "topic": "Final Year Capstone Project",
+    "prompt": "VaakSiddhi is an adaptive AI-driven multilingual speech analysis web platform.",
+    "englishMeaning": "VaakSiddhi is an adaptive AI-driven multilingual speech analysis web platform.",
+    "expectedKeywords": ["VaakSiddhi", "adaptive", "multilingual", "platform"],
+    "phoneticHint": "VaakSiddhi is an adaptive AI-driven multilingual speech analysis web platform.",
+    "level": "Advanced"
+  },
+  {
+    "id": "english-travel-8",
+    "language": "English",
+    "topic": "Vacation & Tourism",
+    "prompt": "We are planning a relaxing vacation to the serene hill stations.",
+    "englishMeaning": "We are planning a relaxing vacation to the serene hill stations.",
+    "expectedKeywords": ["planning", "vacation", "serene", "stations"],
+    "phoneticHint": "We are planning a relaxing vacation to the serene hill stations.",
+    "level": "Intermediate"
+  },
+  {
+    "id": "english-daily-9",
+    "language": "English",
+    "topic": "Daily Routine & Productivity",
+    "prompt": "I maintain a strict daily routine by waking up early and completing goals.",
+    "englishMeaning": "I maintain a strict daily routine by waking up early and completing goals.",
+    "expectedKeywords": ["maintain", "routine", "waking", "goals"],
+    "phoneticHint": "I maintain a strict daily routine by waking up early and completing goals.",
+    "level": "Beginner"
+  },
+  {
+    "id": "english-technology-10",
+    "language": "English",
+    "topic": "Artificial Intelligence Innovations",
+    "prompt": "Artificial intelligence empowers personalized and interactive digital education.",
+    "englishMeaning": "Artificial intelligence empowers personalized and interactive digital education.",
+    "expectedKeywords": ["intelligence", "empowers", "personalized", "education"],
+    "phoneticHint": "Artificial intelligence empowers personalized and interactive digital education.",
+    "level": "Advanced"
+  }
+]

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - Gamified Multilingual Indian Language Learning</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Accepting Learners for 2026 • AI-Powered Indian Multilingual Speech & Literacy Platform ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <span>🕉️ VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="literacy.html" class="nav-link">Literacy</a>
+      <a href="speech.html" class="nav-link">Speech Practice</a>
+      <a href="twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+    </div>
+  </nav>
+
+  <!-- Marquee Ticker Ribbon -->
+  <div class="marquee-ribbon">
+    <div class="marquee-content">
+      ✨ VaakSiddhi Language Platform ★ Speak Native Marathi, Hindi, Kannada & English ★ Audio Models & Pronunciation ★ Speech Evaluation ★ Daily Streak Goals ★ Real-Time Speech Evaluation ✨ &nbsp;&nbsp;&nbsp;&nbsp;
+      ✨ VaakSiddhi Language Platform ★ Speak Native Marathi, Hindi, Kannada & English ★ Audio Models & Pronunciation ★ Speech Evaluation ★ Daily Streak Goals ★ Real-Time Speech Evaluation ✨
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <!-- User Gamification Header Bar -->
+    <div class="user-gamification-bar">
+      <div class="badge-item">
+        <span class="badge-icon">👤</span>
+        <div>
+          <div class="badge-label">Learner Profile</div>
+          <div id="user-name" class="badge-value">Learner</div>
+        </div>
+      </div>
+
+      <div class="badge-item">
+        <span class="badge-icon">⭐</span>
+        <div>
+          <div class="badge-label">Total XP</div>
+          <div id="user-xp" class="badge-value">0 XP</div>
+        </div>
+      </div>
+
+      <div class="badge-item">
+        <span class="badge-icon">🛡️</span>
+        <div>
+          <div class="badge-label">Current Level</div>
+          <div id="user-level" class="badge-value">Level 1 (Beginner)</div>
+          <div class="progress-track">
+            <div id="xp-progress-bar" class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="badge-item">
+        <span class="badge-icon">🔥</span>
+        <div>
+          <div class="badge-label">Daily Streak</div>
+          <div id="user-streak" class="badge-value">0 Days</div>
+        </div>
+      </div>
+
+      <div class="badge-item">
+        <span class="badge-icon">🎯</span>
+        <div>
+          <div class="badge-label">Daily Goal (100 XP)</div>
+          <div id="daily-goal-text" class="badge-value">0 / 100 XP</div>
+          <div class="progress-track">
+            <div id="daily-goal-bar" class="progress-fill" style="background:#3d131f;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Hero Section -->
+    <div class="card card-cream" style="text-align:center; padding: 42px 28px; position:relative;">
+      <!-- Stamp Badge Seal -->
+      <div class="stamp-seal" style="position:absolute; top:20px; right:25px;">
+        <span>V•A•A•K</span>
+        <span style="color:#dc2626;">♥</span>
+        <span style="font-size:9px;">SPEECH</span>
+      </div>
+
+      <div style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:#3d131f; margin-bottom:12px;">
+        (MULTILINGUAL INDIAN SPEECH AI)
+      </div>
+
+      <h1 style="font-size:38px; color:#3d131f; max-width:800px; margin:0 auto 16px auto; line-height:1.2;">
+        For Learners <span class="cursive-font" style="font-size:1.2em; color:#78263e;">& Creators</span> Who Want Clarity and Speech that Performs ♥
+      </h1>
+
+      <p id="continue-lesson-desc" style="color:#5c3240; font-size:16px; max-width:640px; margin:0 auto 28px auto;">
+        Pick up right where you left off in Marathi, Hindi, Kannada, or English. Master native scripts, listen to audio models, practice speaking into your microphone, and earn XP.
+      </p>
+
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; align-items:center;">
+        <a id="continue-learning-btn" href="literacy.html" class="btn btn-primary" style="padding:14px 32px; font-size:16px;">
+          Continue Lesson →
+        </a>
+        <button id="quick-audio-preview-btn" class="btn btn-outline-dashed" style="padding:14px 28px; font-size:16px;">
+          🔊 Listen Audio Sample
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Language Selector -->
+    <div class="card card-pink">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;">
+        <div>
+          <span class="cursive-font" style="font-size:20px;">where culture meets strategy</span>
+          <h2 style="font-size:26px; color:#3d131f; margin:0;">Real Connection, Built to Scale</h2>
+        </div>
+        <span style="font-size:24px;">🍒</span>
+      </div>
+
+      <div class="grid-4">
+        <button class="lang-card-btn" data-lang="Marathi">
+          <span style="font-size:32px; margin-bottom:6px;">🚩</span>
+          <span style="font-size:20px; font-weight:800; font-family:'Playfair Display', serif;">Marathi</span>
+          <span style="font-size:13px; color:#78263e; font-weight:600;">मराठी भाषा</span>
+        </button>
+        <button class="lang-card-btn" data-lang="Hindi">
+          <span style="font-size:32px; margin-bottom:6px;">🪔</span>
+          <span style="font-size:20px; font-weight:800; font-family:'Playfair Display', serif;">Hindi</span>
+          <span style="font-size:13px; color:#78263e; font-weight:600;">हिंदी भाषा</span>
+        </button>
+        <button class="lang-card-btn" data-lang="Kannada">
+          <span style="font-size:32px; margin-bottom:6px;">🐘</span>
+          <span style="font-size:20px; font-weight:800; font-family:'Playfair Display', serif;">Kannada</span>
+          <span style="font-size:13px; color:#78263e; font-weight:600;">ಕನ್ನಡ ಭಾಷೆ</span>
+        </button>
+        <button class="lang-card-btn" data-lang="English">
+          <span style="font-size:32px; margin-bottom:6px;">🌐</span>
+          <span style="font-size:20px; font-weight:800; font-family:'Playfair Display', serif;">English</span>
+          <span style="font-size:13px; color:#78263e; font-weight:600;">Global English</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Access Hub -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+      <h2 style="font-size:26px; color:#3d131f; margin:0;">Learning Modules</h2>
+      <span class="cursive-font" style="font-size:22px;">xoxo, VaakSiddhi</span>
+    </div>
+
+    <div class="grid-3">
+      <div class="polaroid-frame tilt-left" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="font-size:42px; margin-bottom:8px;">📖</div>
+          <h3 style="font-size:22px; color:#3d131f; margin-bottom:6px;">Literacy & Quizzes</h3>
+          <p style="color:#5c3240; font-size:14px; margin-bottom:20px;">
+            Learn native scripts, word meanings, native audio pronunciations, and complete interactive quizzes.
+          </p>
+        </div>
+        <a href="literacy.html" class="btn btn-primary" style="width:100%;">Start Lessons (+50 XP)</a>
+        <div class="polaroid-caption">xoxo, Script Lessons</div>
+      </div>
+
+      <div class="polaroid-frame" style="display:flex; flex-direction:column; justify-content:space-between; background:#fffbf0;">
+        <div>
+          <div style="font-size:42px; margin-bottom:8px;">🎙️</div>
+          <h3 style="font-size:22px; color:#3d131f; margin-bottom:6px;">Speech Practice</h3>
+          <p style="color:#5c3240; font-size:14px; margin-bottom:20px;">
+            Practice speaking with your microphone, eliminate filler words, and get real-time AI speech scores.
+          </p>
+        </div>
+        <a href="speech.html" class="btn btn-primary" style="width:100%;">Practice Speaking (+30 XP)</a>
+        <div class="polaroid-caption">xoxo, Speech AI</div>
+      </div>
+
+      <div class="polaroid-frame tilt-right" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="font-size:42px; margin-bottom:8px;">📊</div>
+          <h3 style="font-size:22px; color:#3d131f; margin-bottom:6px;">Progress Dashboard</h3>
+          <p style="color:#5c3240; font-size:14px; margin-bottom:20px;">
+            Track skill radar profile, speaking improvement trends, badges, and adaptive recommendations.
+          </p>
+        </div>
+        <a href="dashboard.html" class="btn btn-secondary" style="width:100%;">View Dashboard</a>
+        <div class="polaroid-caption">xoxo, Progress</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/audioEngine.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/adaptive.js"></script>
+  <script src="js/subscription.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

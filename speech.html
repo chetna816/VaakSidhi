@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - AI Speech Practice & Evaluation</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Speech Module • Real-Time Voice Recording, Transcription & Filler Word Analysis ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="./index.html" class="nav-brand">
+      <span>🕉️ VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./literacy.html" class="nav-link">Literacy</a>
+      <a href="./speech.html" class="nav-link active">Speech Practice</a>
+      <a href="./twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="./profile.html" class="nav-link">Profile</a>
+      <a href="./login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Browser Support Warning -->
+    <div id="unsupported-alert" style="display:none; background:#fee2e2; color:#991b1b; padding:16px; border-radius:18px; margin-bottom:20px; font-weight:700; border:2px dashed #991b1b;">
+      Speech recognition is not supported in this browser environment. Please try Google Chrome or enable microphone access.
+    </div>
+
+    <!-- Speech Practice Card -->
+    <div class="card card-cream">
+      
+      <!-- Top Title & Language/Topic Selector -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+        <div>
+          <span class="cursive-font" style="font-size:20px;">AI Speech Coach & Structure Analysis</span>
+          <h2 style="font-size:26px; color:#3d131f; margin:0;">🎙️ Public Speaking Practice Arena</h2>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+          <select id="scenario-language-select" style="padding:10px 18px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; cursor:pointer; outline:none; box-shadow:2px 2px 0px #3d131f;">
+            <option value="English">English</option>
+            <option value="Marathi">Marathi (मराठी)</option>
+            <option value="Hindi">Hindi (हिंदी)</option>
+            <option value="Kannada">Kannada (ಕನ್ನಡ)</option>
+          </select>
+
+          <select id="topic-select" style="padding:10px 18px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; cursor:pointer; outline:none; box-shadow:2px 2px 0px #3d131f;">
+            <option value="intro">Custom Prompt</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Public Speaking Scenarios Grid -->
+      <div style="margin-bottom:24px;">
+        <div style="font-size:13px; font-weight:800; color:#78263e; text-transform:uppercase; margin-bottom:12px; letter-spacing:0.5px;">
+          🎯 Choose a Public Speaking Scenario Mode:
+        </div>
+        <div class="grid-3" style="gap:12px;" id="scenarios-grid">
+          <div class="scenario-card active-scenario" data-mode="student" style="background:#fffdf0; border:2px solid #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:3px 3px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">🎓</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Student Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Introduce yourself to a new class."</div>
+          </div>
+
+          <div class="scenario-card" data-mode="interview" style="background:#fffdf0; border:1.5px dashed #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:2px 2px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">💼</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Interview Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Tell me about yourself."</div>
+          </div>
+
+          <div class="scenario-card" data-mode="professional" style="background:#fffdf0; border:1.5px dashed #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:2px 2px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">🧑‍💼</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Professional Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Present your project to your manager."</div>
+          </div>
+
+          <div class="scenario-card" data-mode="presentation" style="background:#fffdf0; border:1.5px dashed #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:2px 2px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">🎤</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Presentation Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Explain your project in 2 minutes."</div>
+          </div>
+
+          <div class="scenario-card" data-mode="debate" style="background:#fffdf0; border:1.5px dashed #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:2px 2px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">🗳️</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Debate Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Should college attendance be mandatory?"</div>
+          </div>
+
+          <div class="scenario-card" data-mode="impromptu" style="background:#fffdf0; border:1.5px dashed #3d131f; padding:14px; border-radius:16px; cursor:pointer; box-shadow:2px 2px 0px #3d131f; transition:all 0.2s;">
+            <div style="font-size:24px; margin-bottom:4px;">📰</div>
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">Impromptu Mode</div>
+            <div style="font-size:12px; color:#6b4c55; margin-top:2px;">"Random topic + 10s prep time!"</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selected Topic Details Prompt Frame -->
+      <div class="polaroid-frame" style="background:#ffffff; border:2px dashed #3d131f; text-align:left; padding:22px; margin-bottom:24px; position:relative;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+          <div style="display:flex; gap:10px;">
+            <span id="topic-difficulty" style="background:#dbeafe; color:#1e40af; font-size:12px; font-weight:800; padding:4px 12px; border-radius:12px; border:1px solid #bfdbfe;">🎓 Student Mode</span>
+            <span id="topic-language" style="background:#fef9c3; color:#854d0e; font-size:12px; font-weight:800; padding:4px 12px; border-radius:12px; border:1px solid #fef08a;">English</span>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button id="impromptu-spin-btn" class="btn btn-outline-dashed" style="display:none; padding:6px 14px; font-size:13px; background:#fef3c7;">
+              🎲 Spin Random Topic
+            </button>
+            <button id="listen-prompt-audio-btn" class="btn btn-outline-dashed" style="padding:6px 14px; font-size:13px;">
+              🔊 Listen Prompt Audio
+            </button>
+          </div>
+        </div>
+        <h3 id="topic-title" style="margin:0 0 8px 0; font-size:22px; color:#3d131f;">🎓 Student Mode: Introduce Yourself</h3>
+        <p id="topic-prompt" style="margin:0; color:#5c3240; font-size:16px;">"Introduce yourself to a new class. Speak about your background, interests, and goals."</p>
+        
+        <!-- Impromptu 10s Countdown Prep Display Box -->
+        <div id="impromptu-prep-box" style="display:none; margin-top:16px; background:#fef3c7; border:2px dashed #b45309; border-radius:14px; padding:16px; text-align:center;">
+          <div style="font-size:13px; font-weight:800; color:#92400e; text-transform:uppercase;">⏱️ Impromptu Preparation Countdown:</div>
+          <div id="impromptu-timer-num" style="font-size:38px; font-weight:800; color:#b45309; font-family:'Playfair Display', serif;">10</div>
+          <div style="font-size:13px; color:#78350f;">Organize your thoughts! Recording starts automatically when timer reaches 0.</div>
+          <button id="start-prep-btn" class="btn btn-primary" style="margin-top:10px; padding:8px 20px; font-size:13px;">
+            ▶ Start 10s Prep Timer
+          </button>
+        </div>
+      </div>
+
+      <!-- Complete Speech Pipeline Workflow Steps Tracker -->
+      <div style="margin-bottom:24px; background:#fce7f3; padding:18px; border-radius:20px; border:2px dashed #3d131f; box-shadow:3px 3px 0px #3d131f;">
+        <div style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; margin-bottom:12px; letter-spacing:0.5px;">
+          Speech Analysis Pipeline Workflow:
+        </div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px; text-align:center;">
+          <div id="step-1" style="background:#fffdf0; padding:12px; border-radius:14px; border:1.5px dashed #3d131f; transition:all 0.3s;">
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">1. 🎙️ Mic Permission</div>
+            <div style="font-size:11px; color:#6b4c55; margin-top:2px; font-weight:600;">Request microphone</div>
+          </div>
+          <div id="step-2" style="background:#fffdf0; padding:12px; border-radius:14px; border:1.5px dashed #3d131f; transition:all 0.3s;">
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">2. 🔊 Capture Audio</div>
+            <div style="font-size:11px; color:#6b4c55; margin-top:2px; font-weight:600;">Recording live voice</div>
+          </div>
+          <div id="step-3" style="background:#fffdf0; padding:12px; border-radius:14px; border:1.5px dashed #3d131f; transition:all 0.3s;">
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">3. 📝 Convert to Text</div>
+            <div style="font-size:11px; color:#6b4c55; margin-top:2px; font-weight:600;">Real-time speech API</div>
+          </div>
+          <div id="step-4" style="background:#fffdf0; padding:12px; border-radius:14px; border:1.5px dashed #3d131f; transition:all 0.3s;">
+            <div style="font-size:16px; font-weight:800; color:#3d131f;">4. 🧠 Analyze & Report</div>
+            <div style="font-size:11px; color:#6b4c55; margin-top:2px; font-weight:600;">Score & tips feedback</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microphone & Recording Action Bar -->
+      <div id="audio-practice-box">
+        <div style="text-align:center; padding:28px; background:#fffdf0; border-radius:20px; margin-bottom:24px; border:2px dashed #3d131f; box-shadow:3px 3px 0px #3d131f;">
+          <div id="recording-status" style="display:none; color:#dc2626; font-weight:800; margin-bottom:10px; font-size:17px;">
+            🔴 Recording live in progress... Speak clearly!
+          </div>
+
+          <div style="font-size:42px; font-weight:800; color:#3d131f; margin-bottom:16px; font-family:'Playfair Display', serif;" id="timer-display">
+            00:00
+          </div>
+
+          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+            <button id="start-record-btn" class="btn btn-primary" style="padding:14px 32px; font-size:16px;">
+              🎙️ Request Mic & Start Speaking
+            </button>
+            <button id="stop-record-btn" class="btn" style="background:#dc2626; color:#ffffff; border:2px solid #3d131f; padding:14px 32px; font-size:16px; display:none; border-radius:30px;">
+              ⏹️ Stop & Evaluate Speech
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Transcribed Text Display Box -->
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <label style="font-size:13px; font-weight:800; color:#3d131f; text-transform:uppercase;">Transcribed Speech Text Output:</label>
+          <span id="live-word-count" style="font-size:12px; font-weight:800; color:#3d131f; background:#fef9c3; padding:4px 12px; border-radius:12px; border:1px solid #3d131f;">0 Words</span>
+        </div>
+        <div id="live-transcript" style="background:#ffffff; border:2px dashed #3d131f; border-radius:16px; padding:20px; min-height:100px; font-size:17px; color:#280b14; line-height:1.6; font-weight:600;">
+          Click 'Request Mic & Start Speaking' and begin talking...
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Analysis Container -->
+    <div id="speech-results-container" style="display:none;"></div>
+
+  </div>
+
+  <script src="./storage.js"></script>
+  <script src="./audioEngine.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./adaptive.js"></script>
+  <script src="./subscription.js"></script>
+  <script src="./speechAnalysis.js"></script>
+  <script src="./speech.js"></script>
+</body>
+</html>

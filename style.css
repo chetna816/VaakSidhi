@@ -1,0 +1,539 @@
+/* VaakSiddhi - Aesthetic Editorial Scrapbook Theme */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --primary-burgundy: #3d131f;
+  --primary-burgundy-hover: #2a0b14;
+  --pastel-pink: #fce7f3;
+  --pastel-pink-accent: #fbcfe8;
+  --pastel-cream: #fffdf0;
+  --pastel-blue: #dbeafe;
+  --pastel-yellow: #fef9c3;
+  --pastel-green: #dcfce7;
+  --sage-olive: #706638;
+  --border-burgundy: #3d131f;
+  --border-light: #e8d7e0;
+  --text-dark: #280b14;
+  --text-muted: #6b4c55;
+  --radius-card: 22px;
+  --shadow-soft: 0 10px 25px -5px rgba(61, 19, 31, 0.08), 0 4px 10px -2px rgba(61, 19, 31, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #faf7f2;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(244, 212, 228, 0.35) 20px, rgba(244, 212, 228, 0.35) 21px);
+  color: var(--text-dark);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Serif & Cursive Typography Utility Classes */
+h1, h2, h3, .serif-font {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.3px;
+}
+
+.cursive-font {
+  font-family: 'Caveat', cursive;
+  font-size: 1.25em;
+  color: #78263e;
+}
+
+/* Top Announcement Banner / Marquee Ribbon */
+.top-announcement-bar {
+  background: #706638;
+  color: #fef9c3;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #3d131f;
+}
+
+.marquee-ribbon {
+  background: #3d131f;
+  color: #fce7f3;
+  padding: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 2px solid #280b14;
+  border-bottom: 2px solid #280b14;
+  margin-bottom: 24px;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Navigation Header */
+.navbar {
+  background: var(--pastel-pink);
+  border-bottom: 2px solid var(--border-burgundy);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(61, 19, 31, 0.06);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--primary-burgundy);
+  text-decoration: none;
+}
+
+.nav-brand span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-brand:hover span {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--primary-burgundy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1.5px dashed transparent;
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  border-color: var(--border-burgundy);
+  background: var(--pastel-cream);
+}
+
+.nav-link.active {
+  background: var(--pastel-cream);
+  border: 1.5px dashed var(--border-burgundy);
+  color: var(--primary-burgundy);
+  box-shadow: 2px 2px 0px var(--border-burgundy);
+}
+
+.nav-btn-inquire {
+  background: var(--pastel-cream);
+  color: var(--primary-burgundy);
+  border: 1.5px dashed var(--border-burgundy);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0px var(--border-burgundy);
+}
+
+.nav-btn-inquire:hover {
+  transform: translateY(-2deg);
+  background: #ffffff;
+}
+
+/* Container & Layout */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* Gamification User Header Bar */
+.user-gamification-bar {
+  background: var(--pastel-cream);
+  border: 2px dashed var(--border-burgundy);
+  border-radius: var(--radius-card);
+  padding: 20px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 4px 0px var(--border-burgundy);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.user-gamification-bar::after {
+  content: '♥';
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  color: #dc2626;
+  font-size: 18px;
+  background: #faf7f2;
+  padding: 0 6px;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge-icon {
+  font-size: 26px;
+  background: var(--pastel-pink);
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--border-burgundy);
+  box-shadow: 2px 2px 0px var(--border-burgundy);
+}
+
+.badge-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.badge-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.progress-track {
+  width: 130px;
+  height: 10px;
+  background: #e8d7e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 4px;
+  border: 1px solid var(--border-burgundy);
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-burgundy);
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 1.5px dashed var(--border-burgundy);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  box-shadow: 3px 3px 0px var(--border-burgundy);
+}
+
+.btn:hover {
+  transform: translateY(-3deg) scale(1.02);
+  box-shadow: 5px 5px 0px var(--border-burgundy);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 1px 1px 0px var(--border-burgundy);
+}
+
+.btn-primary {
+  background: var(--primary-burgundy);
+  color: #fef08a;
+  border: 2px solid #280b14;
+}
+
+.btn-primary:hover {
+  background: var(--primary-burgundy-hover);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: var(--pastel-cream);
+  color: var(--primary-burgundy);
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+}
+
+.btn-outline-dashed {
+  background: var(--pastel-yellow);
+  color: var(--primary-burgundy);
+  border: 2px dashed var(--border-burgundy);
+}
+
+/* Cards & Frames */
+.card {
+  background: #ffffff;
+  border: 2px dashed var(--border-burgundy);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  box-shadow: 4px 4px 0px var(--border-burgundy);
+  margin-bottom: 28px;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 0px var(--border-burgundy);
+}
+
+.card-pink {
+  background: var(--pastel-pink);
+}
+
+.card-blue {
+  background: var(--pastel-blue);
+}
+
+.card-cream {
+  background: var(--pastel-cream);
+}
+
+/* Polaroid Card Frame */
+.polaroid-frame {
+  background: #ffffff;
+  border: 2px solid var(--border-burgundy);
+  border-radius: 12px;
+  padding: 16px 16px 24px 16px;
+  box-shadow: 4px 6px 0px rgba(61, 19, 31, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.polaroid-frame:hover {
+  transform: scale(1.03) rotate(1deg);
+}
+
+.polaroid-frame.tilt-left {
+  transform: rotate(-2deg);
+}
+
+.polaroid-frame.tilt-right {
+  transform: rotate(2deg);
+}
+
+.polaroid-caption {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  color: var(--primary-burgundy);
+  margin-top: 10px;
+}
+
+/* Stamp Seal Decoration */
+.stamp-seal {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px dashed var(--border-burgundy);
+  background: var(--pastel-yellow);
+  color: var(--primary-burgundy);
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-12deg);
+  box-shadow: 2px 2px 0px var(--border-burgundy);
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+/* Language Selection Cards */
+.lang-card-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  border-radius: 18px;
+  border: 2px dashed var(--border-burgundy);
+  background: var(--pastel-cream);
+  color: var(--primary-burgundy);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 3px 3px 0px var(--border-burgundy);
+}
+
+.lang-card-btn:hover {
+  transform: translateY(-4deg) rotate(1deg);
+  background: #ffffff;
+  box-shadow: 5px 5px 0px var(--border-burgundy);
+}
+
+.lang-card-btn.active-lang {
+  background: var(--pastel-pink);
+  border: 2px solid var(--border-burgundy);
+  box-shadow: 4px 4px 0px var(--border-burgundy);
+}
+
+/* Avatar Option Button Grid */
+.avatar-option-btn {
+  background: var(--pastel-cream);
+  border: 1.5px dashed var(--border-burgundy);
+  border-radius: 14px;
+  padding: 10px 4px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0px var(--border-burgundy);
+  color: var(--primary-burgundy);
+}
+
+.avatar-option-btn:hover {
+  transform: translateY(-2deg) scale(1.05);
+  background: #ffffff;
+  box-shadow: 3px 3px 0px var(--border-burgundy);
+}
+
+.avatar-option-btn.active-avatar {
+  background: var(--pastel-pink);
+  border: 2px solid var(--border-burgundy);
+  box-shadow: 3px 3px 0px var(--border-burgundy);
+  transform: scale(1.06);
+}
+
+/* Passport Stamp Badges */
+.passport-stamp-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 16px;
+  border: 2px dashed var(--border-burgundy);
+  background: var(--pastel-yellow);
+  color: var(--primary-burgundy);
+  box-shadow: 3px 3px 0px var(--border-burgundy);
+  transition: transform 0.25s ease;
+  transform: rotate(-2deg);
+}
+
+.passport-stamp-badge:hover {
+  transform: rotate(0deg) scale(1.04);
+}
+
+/* Audio Wave Equalizer Visualizer Bars */
+.audio-wave-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 32px;
+  margin: 10px auto;
+}
+
+.audio-wave-bar {
+  width: 5px;
+  height: 8px;
+  background: #dc2626;
+  border-radius: 4px;
+  animation: audioWave 1.2s ease-in-out infinite alternate;
+}
+
+.audio-wave-bar:nth-child(2) { animation-delay: 0.2s; }
+.audio-wave-bar:nth-child(3) { animation-delay: 0.4s; }
+.audio-wave-bar:nth-child(4) { animation-delay: 0.1s; }
+.audio-wave-bar:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes audioWave {
+  0% { height: 6px; }
+  100% { height: 28px; }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1.5deg); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  70% { box-shadow: 0 0 0 14px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.pulse-recording {
+  animation: pulseGlow 1.8s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .user-gamification-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container {
+    padding: 16px 12px;
+  }
+}

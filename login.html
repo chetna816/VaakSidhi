@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - Learner Login & Personalization</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Learner Portal • Create Your Personal Profile & Custom Language Roadmap ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="./index.html" class="nav-brand">
+      <span>🕉️ VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./literacy.html" class="nav-link">Literacy</a>
+      <a href="./speech.html" class="nav-link">Speech Practice</a>
+      <a href="./twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="./login.html" class="nav-btn-inquire active">Login / Switch Account ♥</a>
+    </div>
+  </nav>
+
+  <div class="container" style="max-width:860px;">
+
+    <!-- Editorial Hero Section -->
+    <div class="card card-cream" style="text-align:center; padding: 36px 24px; position:relative;">
+      <!-- Stamp Seal -->
+      <div class="stamp-seal" style="position:absolute; top:20px; right:20px;">
+        <span>V•A•A•K</span>
+        <span style="color:#dc2626;">♥</span>
+        <span style="font-size:9px;">PASSPORT</span>
+      </div>
+
+      <div style="font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:#3d131f; margin-bottom:10px;">
+        (PERSONALIZED LEARNER ACCOUNTS)
+      </div>
+
+      <h1 style="font-size:34px; color:#3d131f; max-width:700px; margin:0 auto 12px auto;">
+        Welcome to Your <span class="cursive-font" style="font-size:1.2em; color:#78263e;">Language Journey</span> ♥
+      </h1>
+
+      <p style="color:#5c3240; font-size:15px; max-width:580px; margin:0 auto 24px auto;">
+        Create or select your personalized learner profile to save your XP, streaks, native speech recordings, and regional passport stamps across Marathi, Hindi, Kannada, and English.
+      </p>
+    </div>
+
+    <div class="grid-2" style="gap:24px;">
+
+      <!-- Registration / Create Profile Form Card -->
+      <div class="card card-pink" style="margin:0;">
+        <h2 style="font-size:24px; color:#3d131f; margin-bottom:16px;">✨ Create / Personalize Account</h2>
+        
+        <form id="profile-login-form">
+          
+          <!-- Avatar Choice -->
+          <div style="margin-bottom:18px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; display:block; margin-bottom:8px;">Choose Learner Avatar:</label>
+            <div id="avatar-grid" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:10px;">
+              <button type="button" class="avatar-option-btn active-avatar" data-avatar="🦊">🦊<br><span style="font-size:10px;">Fox</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🐘">🐘<br><span style="font-size:10px;">Gaja</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🪔">🪔<br><span style="font-size:10px;">Diya</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🚩">🚩<br><span style="font-size:10px;">Swaraj</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🌸">🌸<br><span style="font-size:10px;">Lotus</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🦚">🦚<br><span style="font-size:10px;">Peacock</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="🦁">🦁<br><span style="font-size:10px;">Lion</span></button>
+              <button type="button" class="avatar-option-btn" data-avatar="⭐">⭐<br><span style="font-size:10px;">Star</span></button>
+            </div>
+            <input type="hidden" id="selected-avatar-input" value="🦊" />
+          </div>
+
+          <!-- Learner Name -->
+          <div style="margin-bottom:16px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; display:block; margin-bottom:6px;">Your Name / Alias:</label>
+            <input type="text" id="learner-name-input" placeholder="e.g. Ananya, Aarav, Priya" required style="width:100%; padding:12px 16px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:15px; background:#fffdf0; color:#3d131f; outline:none; box-shadow:2px 2px 0px #3d131f;" />
+          </div>
+
+          <!-- Native Language -->
+          <div style="margin-bottom:16px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; display:block; margin-bottom:6px;">Your Primary Native Language:</label>
+            <select id="native-lang-select" style="width:100%; padding:12px 16px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:15px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
+              <option value="English">English</option>
+              <option value="Marathi">Marathi (मराठी)</option>
+              <option value="Hindi">Hindi (हिंदी)</option>
+              <option value="Kannada">Kannada (ಕನ್ನಡ)</option>
+            </select>
+          </div>
+
+          <!-- Target Practice Language -->
+          <div style="margin-bottom:16px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; display:block; margin-bottom:6px;">Language You Want to Learn/Practice:</label>
+            <select id="target-lang-select" style="width:100%; padding:12px 16px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:15px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
+              <option value="Marathi">Marathi (मराठी)</option>
+              <option value="Hindi">Hindi (हिंदी)</option>
+              <option value="Kannada">Kannada (ಕನ್ನಡ)</option>
+              <option value="English">English</option>
+            </select>
+          </div>
+
+          <!-- Daily Goal -->
+          <div style="margin-bottom:20px;">
+            <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase; display:block; margin-bottom:6px;">Daily Learning XP Target:</label>
+            <div style="display:flex; gap:10px;">
+              <label style="flex:1; background:#fffdf0; border:1.5px dashed #3d131f; padding:8px; border-radius:14px; text-align:center; font-size:13px; font-weight:800; cursor:pointer;">
+                <input type="radio" name="dailyGoal" value="50" style="margin-right:4px;" /> 50 XP (Casual)
+              </label>
+              <label style="flex:1; background:#fffdf0; border:1.5px dashed #3d131f; padding:8px; border-radius:14px; text-align:center; font-size:13px; font-weight:800; cursor:pointer;">
+                <input type="radio" name="dailyGoal" value="100" checked style="margin-right:4px;" /> 100 XP (Regular)
+              </label>
+              <label style="flex:1; background:#fffdf0; border:1.5px dashed #3d131f; padding:8px; border-radius:14px; text-align:center; font-size:13px; font-weight:800; cursor:pointer;">
+                <input type="radio" name="dailyGoal" value="200" style="margin-right:4px;" /> 200 XP (Intensive)
+              </label>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button type="submit" class="btn btn-primary" style="flex:1; padding:12px 20px; font-size:16px;">
+              🚀 Start Personal Journey
+            </button>
+            <button type="button" id="login-audio-welcome-btn" class="btn btn-outline-dashed" style="padding:12px; font-size:16px;">
+              🔊 Audio
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Saved Learner Profiles / Account Switcher Card -->
+      <div class="card card-blue" style="margin:0; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <h2 style="font-size:24px; color:#3d131f; margin-bottom:12px;">👤 Saved Learner Accounts</h2>
+          <p style="color:#5c3240; font-size:14px; margin-bottom:18px;">
+            Click on any existing profile below to instantly switch accounts and view your personal progress.
+          </p>
+
+          <div id="saved-accounts-list" style="display:flex; flex-direction:column; gap:12px;">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <div style="margin-top:24px; padding-top:16px; border-top:1.5px dashed #3d131f; text-align:center;">
+          <span class="cursive-font" style="font-size:20px;">xoxo, VaakSiddhi Passport</span>
+          <p style="font-size:12px; color:#6b4c55; margin-top:4px;">
+            All progress, audio scores, and streak data remain securely saved in your browser storage.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./storage.js"></script>
+  <script src="./audioEngine.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./adaptive.js"></script>
+  <script src="./subscription.js"></script>
+  <script src="./login.js"></script>
+</body>
+</html>

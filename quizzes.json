@@ -1,0 +1,354 @@
+[
+  {
+    "id": "quiz-marathi-greetings",
+    "lessonId": "marathi-greetings-1",
+    "language": "Marathi",
+    "title": "Marathi Greetings & Vocabulary Quiz",
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the Marathi word for 'Hello'?",
+        "options": ["धन्यवाद", "नमस्कार", "पाणी", "घर"],
+        "answer": "नमस्कार",
+        "explanation": "नमस्कार (Namaskar) is the formal Marathi greeting for Hello."
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "Which word in Marathi means 'Thank You'?",
+        "options": ["शुभ प्रभात", "धन्यवाद", "आई", "बाबा"],
+        "answer": "धन्यवाद",
+        "explanation": "धन्यवाद (Dhanyavaad) means Thank You in Marathi."
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How do you say 'Good Morning' in Marathi?",
+        "options": ["पुन्हा भेटू", "शुभ प्रभात", "क्षमा करा", "नमस्कार"],
+        "answer": "शुभ प्रभात",
+        "explanation": "शुभ प्रभात (Shubh Prabhat) translates to Good Morning."
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "question": "What does 'आई' mean in Marathi?",
+        "options": ["Father", "Mother", "Sister", "Brother"],
+        "answer": "Mother",
+        "explanation": "आई (Aai) means Mother in Marathi."
+      },
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "What is the Marathi word for 'Water'?",
+        "options": ["पाणी", "दूध", "चहा", "फळ"],
+        "answer": "पाणी",
+        "explanation": "पाणी (Paani) means Water in Marathi."
+      },
+      {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "How do you say number 'One' (1) in Marathi?",
+        "options": ["दोन", "एक", "तीन", "पाच"],
+        "answer": "एक",
+        "explanation": "एक (Ek) means One (1)."
+      },
+      {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "What is 'College' called in formal Marathi?",
+        "options": ["महाविद्यालय", "पुस्तक", "परीक्षा", "अभ्यास"],
+        "answer": "महाविद्यालय",
+        "explanation": "महाविद्यालय (Mahavidyalaya) translates to College."
+      },
+      {
+        "id": 8,
+        "type": "multiple-choice",
+        "question": "What does 'मित्रा' mean in Marathi?",
+        "options": ["Teacher", "Friend", "Brother", "Sister"],
+        "answer": "Friend",
+        "explanation": "मित्र (Mitra) means Friend."
+      },
+      {
+        "id": 9,
+        "type": "fill-blank",
+        "question": "Fill in the blank: 'पुन्हा ____' means See you again in Marathi.",
+        "options": ["भेटू", "करा", "धन्यवाद", "प्रभात"],
+        "answer": "भेटू",
+        "explanation": "पुन्हा भेटू (Punaah Bhetu) means 'See you again'."
+      },
+      {
+        "id": 10,
+        "type": "fill-blank",
+        "question": "Fill in the blank: 'माझ्या हाताला ____ बोटे आहेत.' (Five fingers)",
+        "options": ["पाच", "दोन", "चार", "एक"],
+        "answer": "पाच",
+        "explanation": "पाच (Paach) means Five."
+      }
+    ]
+  },
+  {
+    "id": "quiz-hindi-greetings",
+    "lessonId": "hindi-greetings-1",
+    "language": "Hindi",
+    "title": "Hindi Vocabulary & Grammar Quiz",
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the primary Hindi greeting corresponding to Hello?",
+        "options": ["नमस्ते", "पानी", "धन्यवाद", "चाय"],
+        "answer": "नमस्ते",
+        "explanation": "नमस्ते (Namaste) is the standard respectful Hindi greeting."
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What does 'सुप्रभात' mean in Hindi?",
+        "options": ["Good Night", "Good Morning", "Good Evening", "Goodbye"],
+        "answer": "Good Morning",
+        "explanation": "सुप्रभात (Suprabhat) means Good Morning."
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is the Hindi word for 'Water'?",
+        "options": ["दूध", "पानी", "चाय", "खाना"],
+        "answer": "पानी",
+        "explanation": "पानी (Paani) means Water."
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "question": "Which Hindi word means 'Thank you'?",
+        "options": ["धन्यवाद", "नमस्ते", "क्षमा", "मित्र"],
+        "answer": "धन्यवाद",
+        "explanation": "धन्यवाद (Dhanyavaad) means Thank You."
+      },
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "What does 'माता' mean in Hindi?",
+        "options": ["Mother", "Father", "Sister", "Friend"],
+        "answer": "Mother",
+        "explanation": "माता (Mata) means Mother."
+      },
+      {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "How do you say number 'Three' (3) in Hindi?",
+        "options": ["एक", "दो", "तीन", "चार"],
+        "answer": "तीन",
+        "explanation": "तीन (Teen) means Three (3)."
+      },
+      {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "What is the Hindi word for 'Teacher'?",
+        "options": ["शिक्षक", "मित्र", "किताब", "परीक्षा"],
+        "answer": "शिक्षक",
+        "explanation": "शिक्षक (Shikshak) means Teacher."
+      },
+      {
+        "id": 8,
+        "type": "multiple-choice",
+        "question": "What does 'किताब' mean in Hindi?",
+        "options": ["Book", "Pen", "Paper", "Classroom"],
+        "answer": "Book",
+        "explanation": "किताब (Kitab) means Book."
+      },
+      {
+        "id": 9,
+        "type": "fill-blank",
+        "question": "'फिर ____' means See you again in Hindi.",
+        "options": ["मिलेंगे", "चलेंगे", "खाएंगे", "पीएंगे"],
+        "answer": "मिलेंगे",
+        "explanation": "फिर मिलेंगे (Phir Milenge) means 'See you again'."
+      },
+      {
+        "id": 10,
+        "type": "fill-blank",
+        "question": "Fill in the blank: 'सुबह जल्दी उठना ____ है।'",
+        "options": ["अच्छा", "बुरा", "कठिन", "महंगा"],
+        "answer": "अच्छा",
+        "explanation": "अच्छा (Achha) means Good."
+      }
+    ]
+  },
+  {
+    "id": "quiz-kannada-greetings",
+    "lessonId": "kannada-greetings-1",
+    "language": "Kannada",
+    "title": "Kannada Literacy & Vocab Quiz",
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is the Kannada word for 'Greetings' or 'Hello'?",
+        "options": ["ನಮಸ್ಕಾರ", "ಧನ್ಯವಾದ", "ಪುಸ್ತಕ", "ಸ್ನೇಹಿತ"],
+        "answer": "ನಮಸ್ಕಾರ",
+        "explanation": "ನಮಸ್ಕಾರ (Namaskara) is the Kannada word for Hello/Greetings."
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "Which word translates to 'Thank You' in Kannada?",
+        "options": ["ಶುಭೋದಯ", "ಧನ್ಯವಾದ", "ತರಗತಿ", "ಮತ್ತೆ"],
+        "answer": "ಧನ್ಯವಾದ",
+        "explanation": "ಧನ್ಯವಾದ (Dhanyavaada) means Thank You."
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What does 'ಶುಭೋದಯ' mean in Kannada?",
+        "options": ["Good Morning", "Good Night", "Goodbye", "Welcome"],
+        "answer": "Good Morning",
+        "explanation": "ಶುಭೋದಯ (Shubhodaya) translates to Good Morning."
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "question": "What is 'Water' in Kannada?",
+        "options": ["ನೀರು", "ಹಾಲು", "ಊಟ", "ತಿಂಡಿ"],
+        "answer": "ನೀರು",
+        "explanation": "ನೀರು (Neeru) means Water."
+      },
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "What is the word for 'Mother' in Kannada?",
+        "options": ["ಅಮ್ಮ", "ಅಪ್ಪ", "ಅಣ್ಣ", "ಅಕ್ಕ"],
+        "answer": "ಅಮ್ಮ",
+        "explanation": "ಅಮ್ಮ (Amma) means Mother."
+      },
+      {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "How do you say number 'One' (1) in Kannada?",
+        "options": ["ಒಂದು", "ಎರಡು", "ಮೂರು", "ನಾಲ್ಕು"],
+        "answer": "ಒಂದು",
+        "explanation": "ಒಂದು (Ondu) means One (1)."
+      },
+      {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "What does 'ಪುಸ್ತಕ' mean in Kannada?",
+        "options": ["Book", "Pen", "Bag", "Desk"],
+        "answer": "Book",
+        "explanation": "ಪುಸ್ತಕ (Pustaka) means Book."
+      },
+      {
+        "id": 8,
+        "type": "multiple-choice",
+        "question": "What is 'Friend' in Kannada?",
+        "options": ["ಸ್ನೇಹಿತ", "ಶಿಕ್ಷಕರು", "ತರಗತಿ", "ಪರೀಕ್ಷೆ"],
+        "answer": "ಸ್ನೇಹಿತ",
+        "explanation": "ಸ್ನೇಹಿತ (Snehitha) means Friend."
+      },
+      {
+        "id": 9,
+        "type": "fill-blank",
+        "question": "'ಮತ್ತೆ ____' means See you again in Kannada.",
+        "options": ["ಸಿಗೋಣ", "ಹೋಗೋಣ", "ಬರೋಣ", "ನೋಡೋಣ"],
+        "answer": "ಸಿಗೋಣ",
+        "explanation": "ಮತ್ತೆ ಸಿಗೋಣ (Matte Sigona) means 'See you again'."
+      },
+      {
+        "id": 10,
+        "type": "fill-blank",
+        "question": "Fill in the blank: 'ಸಮಯ ____.' (Time is precious)",
+        "options": ["ಅಮೂಲ್ಯವಾದದ್ದು", "ದೊಡ್ಡದು", "ಸಣ್ಣದು", "ಹಳೆಯದು"],
+        "answer": "ಅಮೂಲ್ಯವಾದದ್ದು",
+        "explanation": "ಅಮೂಲ್ಯವಾದದ್ದು means Precious/Valuable."
+      }
+    ]
+  },
+  {
+    "id": "quiz-english-greetings",
+    "lessonId": "english-greetings-1",
+    "language": "English",
+    "title": "English Basic Conversation Quiz",
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is a formal response when meeting someone for the first time?",
+        "options": ["Pleased to meet you", "See you later", "Bye now", "No thanks"],
+        "answer": "Pleased to meet you",
+        "explanation": "'Pleased to meet you' is polite and formal for introductions."
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "Where do students go to borrow books in college?",
+        "options": ["Library", "Assignment", "Presentation", "Cafeteria"],
+        "answer": "Library",
+        "explanation": "A library contains books for study."
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What term refers to a task assigned by a professor?",
+        "options": ["Assignment", "Library", "Schedule", "Friend"],
+        "answer": "Assignment",
+        "explanation": "An assignment is an academic task given to students."
+      },
+      {
+        "id": 4,
+        "type": "multiple-choice",
+        "question": "What is the universal greeting for morning hours?",
+        "options": ["Good Morning", "Good Night", "Goodbye", "Pleased"],
+        "answer": "Good Morning",
+        "explanation": "Good Morning is used when greeting someone in the morning."
+      },
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "Which word describes achieving high output in a day?",
+        "options": ["Productive", "Lazy", "Slow", "Rushed"],
+        "answer": "Productive",
+        "explanation": "Productive means achieving significant or useful results."
+      },
+      {
+        "id": 6,
+        "type": "multiple-choice",
+        "question": "What is the term for a speech explaining a topic in class?",
+        "options": ["Presentation", "Assignment", "Degree", "Laboratory"],
+        "answer": "Presentation",
+        "explanation": "A presentation is a demonstration explaining a topic."
+      },
+      {
+        "id": 7,
+        "type": "multiple-choice",
+        "question": "Which term describes steady practice over time?",
+        "options": ["Consistency", "Delay", "Randomness", "Hesitation"],
+        "answer": "Consistency",
+        "explanation": "Consistency means performing regularly over time."
+      },
+      {
+        "id": 8,
+        "type": "multiple-choice",
+        "question": "What room is equipped for practical computer experiments?",
+        "options": ["Laboratory", "Library", "Cafeteria", "Lobby"],
+        "answer": "Laboratory",
+        "explanation": "A laboratory is equipped for practical experiments."
+      },
+      {
+        "id": 9,
+        "type": "fill-blank",
+        "question": "Fill in the blank: '____ is key to mastering new languages.'",
+        "options": ["Consistency", "Hesitation", "Delay", "Silence"],
+        "answer": "Consistency",
+        "explanation": "Consistency ensures long-term retention and progress."
+      },
+      {
+        "id": 10,
+        "type": "fill-blank",
+        "question": "Fill in the blank: 'Track your speech score ____ on the dashboard.'",
+        "options": ["improvement", "decrease", "loss", "error"],
+        "answer": "improvement",
+        "explanation": "Improvement tracks positive progress over time."
+      }
+    ]
+  }
+]

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaakSiddhi - Cultural Tongue Twister Challenge</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    ✨ Cultural Speed Challenge • Master Regional Tongue Twisters in Marathi, Hindi, Kannada & English ✨
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="./index.html" class="nav-brand">
+      <span>🕉️ VaakSiddhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./literacy.html" class="nav-link">Literacy</a>
+      <a href="./speech.html" class="nav-link">Speech Practice</a>
+      <a href="./twisters.html" class="nav-link active">Tongue Twisters</a>
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="./login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Filters & Language Header -->
+    <div class="card card-pink" style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;">
+      <div>
+        <span class="cursive-font" style="font-size:20px;">speed & pronunciation mastery</span>
+        <h2 style="font-size:26px; color:#3d131f; margin:0;">🔥 Regional Tongue Twister Arena</h2>
+      </div>
+
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+        <button id="twister-random-btn" class="btn btn-secondary" style="padding:10px 18px; font-size:13px; font-weight:800; border-radius:24px;">
+          🎲 Random Twister
+        </button>
+        <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase;">Language:</label>
+        <select id="twister-language-select" style="padding:10px 18px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
+          <option value="Marathi">Marathi (मराठी - जिव्हाफोड)</option>
+          <option value="Hindi">Hindi (हिंदी - चटपटी बातें)</option>
+          <option value="Kannada">Kannada (ಕನ್ನಡ - ನಾಲಿಗೆ ತಿರುವು)</option>
+          <option value="Tamil">Tamil (தமிழ் - நாக்கு சுழற்றி)</option>
+          <option value="Telugu">Telugu (తెలుగు - నాలుక తిరుగుడు)</option>
+          <option value="English">English (Tongue Twister)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Active Tongue Twister Challenge Card -->
+    <div class="card card-cream">
+      
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span id="twister-level-badge" style="background:#fef9c3; color:#854d0e; font-size:13px; font-weight:800; padding:4px 14px; border-radius:14px; border:1px solid #3d131f;">
+            ⭐ Level: Hard Speed Test
+          </span>
+          <span id="twister-category-badge" style="background:#fce7f3; color:#831843; font-size:13px; font-weight:800; padding:4px 14px; border-radius:14px; border:1px solid #3d131f;">
+            Consonant Speed
+          </span>
+        </div>
+        <span id="twister-xp-badge" style="background:#dbeafe; color:#1e40af; font-size:13px; font-weight:800; padding:4px 14px; border-radius:14px; border:1px solid #3d131f;">
+          +40 XP Reward
+        </span>
+      </div>
+
+      <!-- Twister Display Frame -->
+      <div class="polaroid-frame" style="background:#ffffff; border:2px dashed #3d131f; text-align:center; padding:32px 20px; margin-bottom:24px; position:relative;">
+        <div id="twister-native-text" style="font-size:32px; font-weight:800; color:#3d131f; margin-bottom:10px; font-family:'Playfair Display', serif; line-height:1.4;">
+          काकाचा काकूने काकाचा काकुच्या काकुच्या काकुला...
+        </div>
+        <div id="twister-romanized-text" style="font-size:18px; font-weight:700; color:#78263e; margin-bottom:10px;">
+          (Kakani Kakula Kakanchya Kakuchya...)
+        </div>
+        <p id="twister-meaning-text" style="color:#6b4c55; font-size:15px; max-width:600px; margin:0 auto 20px auto; font-style:italic;">
+          A classic Marathi tongue twister focusing on soft velar consonant repetitions.
+        </p>
+
+        <!-- Audio Model Controls -->
+        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+          <button id="twister-listen-slow-btn" class="btn btn-outline-dashed" style="padding:10px 20px; font-size:14px;">
+            🐌 Slow Practice (0.6x)
+          </button>
+          <button id="twister-listen-normal-btn" class="btn btn-primary" style="padding:10px 22px; font-size:14px;">
+            🔊 Normal Speed (1.0x)
+          </button>
+          <button id="twister-listen-fast-btn" class="btn btn-secondary" style="padding:10px 20px; font-size:14px;">
+            ⚡ Speed Demon (1.3x)
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Speed & Speech Evaluation Box -->
+      <div style="background:#fce7f3; border:2px dashed #3d131f; border-radius:20px; padding:24px; margin-bottom:20px; box-shadow:3px 3px 0px #3d131f;">
+        <h4 style="margin:0 0 12px 0; font-size:20px; color:#3d131f; font-family:'Playfair Display', serif;">🎙️ Live Speed Recitation Challenge</h4>
+        
+        <div style="text-align:center; padding:20px; background:#fffdf0; border-radius:16px; border:1.5px dashed #3d131f; margin-bottom:16px;">
+          <div id="twister-rec-status" style="display:none; color:#dc2626; font-weight:800; margin-bottom:8px; font-size:16px;">
+            🔴 Recording live speed recitation... Speak as fast and clearly as you can!
+          </div>
+          <div id="twister-timer" style="font-size:36px; font-weight:800; color:#3d131f; font-family:'Playfair Display', serif; margin-bottom:12px;">
+            00:00
+          </div>
+          <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+            <button id="twister-start-btn" class="btn btn-primary" style="padding:12px 28px; font-size:16px;">
+              🎙️ Start Twister Speed Test
+            </button>
+            <button id="twister-stop-btn" class="btn" style="background:#dc2626; color:#fff; border:2px solid #3d131f; padding:12px 28px; font-size:16px; display:none; border-radius:30px; cursor:pointer;">
+              ⏹️ Finish & Calculate Speed Score
+            </button>
+          </div>
+        </div>
+
+        <!-- Transcribed Speech Output -->
+        <div style="margin-bottom:16px;">
+          <label style="font-size:12px; font-weight:800; color:#3d131f; display:block; margin-bottom:4px; text-transform:uppercase;">Captured Voice Recitation:</label>
+          <div id="twister-transcript-display" style="background:#ffffff; border:1.5px dashed #3d131f; padding:16px; border-radius:12px; font-size:17px; font-weight:700; color:#280b14; min-height:50px;">
+            Click 'Start Twister Speed Test' and recite the phrase quickly...
+          </div>
+        </div>
+
+        <!-- Evaluation Results Card -->
+        <div id="twister-evaluation-card" style="display:none;"></div>
+      </div>
+
+    </div>
+
+    <!-- Tongue Twisters Selector Grid Header & Difficulty Filter -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:12px;">
+      <h3 style="font-size:24px; color:#3d131f; margin:0;">📚 Select Tongue Twister Challenge</h3>
+      
+      <!-- Difficulty Filters -->
+      <div id="twister-difficulty-filters" style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button data-diff="All" class="btn btn-primary diff-filter-btn" style="padding:6px 16px; font-size:12px;">All</button>
+        <button data-diff="Easy" class="btn btn-outline-dashed diff-filter-btn" style="padding:6px 16px; font-size:12px;">Easy 🌱</button>
+        <button data-diff="Medium" class="btn btn-outline-dashed diff-filter-btn" style="padding:6px 16px; font-size:12px;">Medium ⭐</button>
+        <button data-diff="Hard" class="btn btn-outline-dashed diff-filter-btn" style="padding:6px 16px; font-size:12px;">Hard 🔥</button>
+      </div>
+    </div>
+
+    <div id="twisters-grid-container" class="grid-2"></div>
+
+  </div>
+
+  <script src="./storage.js"></script>
+  <script src="./audioEngine.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./adaptive.js"></script>
+  <script src="./subscription.js"></script>
+  <script src="./twisters.js"></script>
+</body>
+</html>

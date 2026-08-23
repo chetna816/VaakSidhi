@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "marathi-greetings-1",
+    "language": "Marathi",
+    "category": "Greetings",
+    "title": "Marathi Greetings & Polite Terms",
+    "level": "Beginner",
+    "description": "Learn basic everyday greetings and polite phrases in Marathi.",
+    "words": [
+      {
+        "native": "नमस्कार",
+        "romanized": "Namaskar",
+        "meaning": "Hello / Greetings",
+        "example": "नमस्कार, तुम्ही कसे आहात?",
+        "audio": "audio/marathi/namaskar.mp3"
+      },
+      {
+        "native": "धन्यवाद",
+        "romanized": "Dhanyavaad",
+        "meaning": "Thank you",
+        "example": "तुमच्या मदतीसाठी धन्यवाद.",
+        "audio": "audio/marathi/dhanyavaad.mp3"
+      },
+      {
+        "native": "शुभ प्रभात",
+        "romanized": "Shubh Prabhat",
+        "meaning": "Good Morning",
+        "example": "शुभ प्रभात, आजचा दिवस छान जावो!",
+        "audio": "audio/marathi/shubh-prabhat.mp3"
+      },
+      {
+        "native": "पुन्हा भेटू",
+        "romanized": "Punaah Bhetu",
+        "meaning": "See you again",
+        "example": "आपण उद्या पुन्हा भेटू.",
+        "audio": "audio/marathi/punaah-bhetu.mp3"
+      },
+      {
+        "native": "क्षमा करा",
+        "romanized": "Kshama Kara",
+        "meaning": "Excuse me / Sorry",
+        "example": "क्षमा करा, मला उशीर झाला.",
+        "audio": "audio/marathi/kshama-kara.mp3"
+      }
+    ]
+  },
+  {
+    "id": "marathi-numbers-1",
+    "language": "Marathi",
+    "category": "Numbers",
+    "title": "Marathi Numbers (1 - 5)",
+    "level": "Beginner",
+    "description": "Master counting from one to five in Marathi.",
+    "words": [
+      {
+        "native": "एक",
+        "romanized": "Ek",
+        "meaning": "One (1)",
+        "example": "माझ्याकडे एक पुस्तक आहे.",
+        "audio": "audio/marathi/ek.mp3"
+      },
+      {
+        "native": "दोन",
+        "romanized": "Don",
+        "meaning": "Two (2)",
+        "example": "त्याच्याकडे दोन पेन आहेत.",
+        "audio": "audio/marathi/don.mp3"
+      },
+      {
+        "native": "तीन",
+        "romanized": "Teen",
+        "meaning": "Three (3)",
+        "example": "झाडावर तीन पक्षी बसले आहेत.",
+        "audio": "audio/marathi/teen.mp3"
+      },
+      {
+        "native": "चार",
+        "romanized": "Chaar",
+        "meaning": "Four (4)",
+        "example": "गाडीला चार चाके असतात.",
+        "audio": "audio/marathi/chaar.mp3"
+      },
+      {
+        "native": "पाच",
+        "romanized": "Paach",
+        "meaning": "Five (5)",
+        "example": "माझ्या हाताला पाच बोटे आहेत.",
+        "audio": "audio/marathi/paach.mp3"
+      }
+    ]
+  },
+  {
+    "id": "marathi-family-1",
+    "language": "Marathi",
+    "category": "Family",
+    "title": "Family Relations in Marathi",
+    "level": "Beginner",
+    "description": "Learn vocabulary for close family members.",
+    "words": [
+      {
+        "native": "आई",
+        "romanized": "Aai",
+        "meaning": "Mother",
+        "example": "माझी आई खूप प्रेमळ आहे.",
+        "audio": "audio/marathi/aai.mp3"
+      },
+      {
+        "native": "बाबा",
+        "romanized": "Baba",
+        "meaning": "Father",
+        "example": "माझे बाबा ऑफिसला गेले आहेत.",
+        "audio": "audio/marathi/baba.mp3"
+      },
+      {
+        "native": "भाऊ",
+        "romanized": "Bhau",
+        "meaning": "Brother",
+        "example": "माझा भाऊ शाळेत जातो.",
+        "audio": "audio/marathi/bhau.mp3"
+      },
+      {
+        "native": "बहीण",
+        "romanized": "Bahin",
+        "meaning": "Sister",
+        "example": "माझी बहीण गाणे गाते.",
+        "audio": "audio/marathi/bahin.mp3"
+      },
+      {
+        "native": "मित्र",
+        "romanized": "Mitra",
+        "meaning": "Friend",
+        "example": "माझा मित्र खूप हुशार आहे.",
+        "audio": "audio/marathi/mitra.mp3"
+      }
+    ]
+  },
+  {
+    "id": "marathi-food-1",
+    "language": "Marathi",
+    "category": "Food",
+    "title": "Food & Dining in Marathi",
+    "level": "Beginner",
+    "description": "Vocabulary for food and beverages in Marathi.",
+    "words": [
+      {
+        "native": "जेवण",
+        "romanized": "Jevan",
+        "meaning": "Meal / Food",
+        "example": "आजचे जेवण खूप छान आहे.",
+        "audio": "audio/marathi/jevan.mp3"
+      },
+      {
+        "native": "पाणी",
+        "romanized": "Paani",
+        "meaning": "Water",
+        "example": "मला पाणी प्यायचे आहे.",
+        "audio": "audio/marathi/paani.mp3"
+      },
+      {
+        "native": "चहा",
+        "romanized": "Chaha",
+        "meaning": "Tea",
+        "example": "गरम चहा आवडतो.",
+        "audio": "audio/marathi/chaha.mp3"
+      },
+      {
+        "native": "दूध",
+        "romanized": "Doodh",
+        "meaning": "Milk",
+        "example": "रोज दूध पिणे चांगले.",
+        "audio": "audio/marathi/doodh.mp3"
+      },
+      {
+        "native": "फळ",
+        "romanized": "Phal",
+        "meaning": "Fruit",
+        "example": "सफरचंद हे छान फळ आहे.",
+        "audio": "audio/marathi/phal.mp3"
+      }
+    ]
+  },
+  {
+    "id": "marathi-college-1",
+    "language": "Marathi",
+    "category": "College",
+    "title": "College & Education Words",
+    "level": "Intermediate",
+    "description": "Academic and campus terminology in Marathi.",
+    "words": [
+      {
+        "native": "महाविद्यालय",
+        "romanized": "Mahavidyalaya",
+        "meaning": "College",
+        "example": "मी महाविद्यालयात शिकतो.",
+        "audio": "audio/marathi/mahavidyalaya.mp3"
+      },
+      {
+        "native": "पुस्तक",
+        "romanized": "Pustak",
+        "meaning": "Book",
+        "example": "हे पुस्तक नवीन आहे.",
+        "audio": "audio/marathi/pustak.mp3"
+      },
+      {
+        "native": "परीक्षा",
+        "romanized": "Pariksha",
+        "meaning": "Exam",
+        "example": "उद्या माझी परीक्षा आहे.",
+        "audio": "audio/marathi/pariksha.mp3"
+      },
+      {
+        "native": "शिक्षक",
+        "romanized": "Shikshak",
+        "meaning": "Teacher",
+        "example": "शिक्षक आदरणीय असतात.",
+        "audio": "audio/marathi/shikshak.mp3"
+      },
+      {
+        "native": "अभ्यास",
+        "romanized": "Abhyas",
+        "meaning": "Study",
+        "example": "मी रोज अभ्यास करतो.",
+        "audio": "audio/marathi/abhyas.mp3"
+      }
+    ]
+  },
+  {
+    "id": "marathi-routine-1",
+    "language": "Marathi",
+    "category": "Daily Routine",
+    "title": "Daily Routine Phrases",
+    "level": "Intermediate",
+    "description": "Phrases for daily life and time management.",
+    "words": [
+      {
+        "native": "सकाळ",
+        "romanized": "Sakaal",
+        "meaning": "Morning",
+        "example": "सकाळी फिरायला जाणे उत्तम.",
+        "audio": "audio/marathi/sakaal.mp3"
+      },
+      {
+        "native": "संध्याकाळ",
+        "romanized": "Sandhyakaal",
+        "meaning": "Evening",
+        "example": "संध्याकाळी आम्ही खेळतो.",
+        "audio": "audio/marathi/sandhyakaal.mp3"
+      },
+      {
+        "native": "रात्र",
+        "romanized": "Ratra",
+        "meaning": "Night",
+        "example": "रात्री लवकर झोपावे.",
+        "audio": "audio/marathi/ratra.mp3"
+      },
+      {
+        "native": "काम",
+        "romanized": "Kaam",
+        "meaning": "Work",
+        "example": "माझे काम पूर्ण झाले.",
+        "audio": "audio/marathi/kaam.mp3"
+      },
+      {
+        "native": "वेळ",
+        "romanized": "Vael",
+        "meaning": "Time",
+        "example": "वेळेचे महत्त्व ओळखा.",
+        "audio": "audio/marathi/vael.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-greetings-1",
+    "language": "Hindi",
+    "category": "Greetings",
+    "title": "Hindi Essential Greetings",
+    "level": "Beginner",
+    "description": "Learn common Hindi greetings for daily conversation.",
+    "words": [
+      {
+        "native": "नमस्ते",
+        "romanized": "Namaste",
+        "meaning": "Hello / Respectful Greeting",
+        "example": "नमस्ते, आप कैसे हैं?",
+        "audio": "audio/hindi/namaste.mp3"
+      },
+      {
+        "native": "धन्यवाद",
+        "romanized": "Dhanyavaad",
+        "meaning": "Thank you",
+        "example": "आपकी सहायता के लिए धन्यवाद।",
+        "audio": "audio/hindi/dhanyavaad.mp3"
+      },
+      {
+        "native": "सुप्रभात",
+        "romanized": "Suprabhat",
+        "meaning": "Good Morning",
+        "example": "सुप्रभात! आपका दिन शुभ हो।",
+        "audio": "audio/hindi/suprabhat.mp3"
+      },
+      {
+        "native": "फिर मिलेंगे",
+        "romanized": "Phir Milenge",
+        "meaning": "See you again",
+        "example": "कल फिर मिलेंगे।",
+        "audio": "audio/hindi/phir-milenge.mp3"
+      },
+      {
+        "native": "क्षमा करें",
+        "romanized": "Kshama Karen",
+        "meaning": "Excuse me / Sorry",
+        "example": "क्षमा करें, मुझे देर हो गई।",
+        "audio": "audio/hindi/kshama-karen.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-numbers-1",
+    "language": "Hindi",
+    "category": "Numbers",
+    "title": "Hindi Numbers (1 - 5)",
+    "level": "Beginner",
+    "description": "Counting 1 to 5 in Hindi.",
+    "words": [
+      {
+        "native": "एक",
+        "romanized": "Ek",
+        "meaning": "One (1)",
+        "example": "मेरे पास एक किताब है।",
+        "audio": "audio/hindi/ek.mp3"
+      },
+      {
+        "native": "दो",
+        "romanized": "Do",
+        "meaning": "Two (2)",
+        "example": "उसके पास दो पेन हैं।",
+        "audio": "audio/hindi/do.mp3"
+      },
+      {
+        "native": "तीन",
+        "romanized": "Teen",
+        "meaning": "Three (3)",
+        "example": "पेड़ पर तीन पक्षी हैं।",
+        "audio": "audio/hindi/teen.mp3"
+      },
+      {
+        "native": "चार",
+        "romanized": "Chaar",
+        "meaning": "Four (4)",
+        "example": "गाड़ी के चार पहिए होते हैं।",
+        "audio": "audio/hindi/chaar.mp3"
+      },
+      {
+        "native": "पांच",
+        "romanized": "Paanch",
+        "meaning": "Five (5)",
+        "example": "हाथ में पांच उंगलियां हैं।",
+        "audio": "audio/hindi/paanch.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-family-1",
+    "language": "Hindi",
+    "category": "Family",
+    "title": "Family Members in Hindi",
+    "level": "Beginner",
+    "description": "Learn names of relatives in Hindi.",
+    "words": [
+      {
+        "native": "माता",
+        "romanized": "Mata",
+        "meaning": "Mother",
+        "example": "मेरी माता जी स्नेहपूर्ण हैं।",
+        "audio": "audio/hindi/mata.mp3"
+      },
+      {
+        "native": "पिता",
+        "romanized": "Pita",
+        "meaning": "Father",
+        "example": "मेरे पिता जी काम पर गए हैं।",
+        "audio": "audio/hindi/pita.mp3"
+      },
+      {
+        "native": "भाई",
+        "romanized": "Bhai",
+        "meaning": "Brother",
+        "example": "मेरा भाई विद्यालय जाता है।",
+        "audio": "audio/hindi/bhai.mp3"
+      },
+      {
+        "native": "बहन",
+        "romanized": "Behen",
+        "meaning": "Sister",
+        "example": "मेरी बहन गाना गाती है।",
+        "audio": "audio/hindi/behen.mp3"
+      },
+      {
+        "native": "मित्र",
+        "romanized": "Mitra",
+        "meaning": "Friend",
+        "example": "वह मेरा सबसे अच्छा मित्र है।",
+        "audio": "audio/hindi/mitra.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-food-1",
+    "language": "Hindi",
+    "category": "Food",
+    "title": "Food & Dining Vocabulary",
+    "level": "Beginner",
+    "description": "Popular food items and dining phrases in Hindi.",
+    "words": [
+      {
+        "native": "पानी",
+        "romanized": "Paani",
+        "meaning": "Water",
+        "example": "मुझे ठंडा पानी चाहिए।",
+        "audio": "audio/hindi/paani.mp3"
+      },
+      {
+        "native": "खाना",
+        "romanized": "Khaana",
+        "meaning": "Food / Meal",
+        "example": "खाना बहुत स्वादिष्ट है।",
+        "audio": "audio/hindi/khaana.mp3"
+      },
+      {
+        "native": "चाय",
+        "romanized": "Chaai",
+        "meaning": "Tea",
+        "example": "क्या आप चाय पिएंगे?",
+        "audio": "audio/hindi/chaai.mp3"
+      },
+      {
+        "native": "फल",
+        "romanized": "Phal",
+        "meaning": "Fruits",
+        "example": "ताज़े फल स्वास्थ्य के लिए अच्छे हैं।",
+        "audio": "audio/hindi/phal.mp3"
+      },
+      {
+        "native": "दूध",
+        "romanized": "Doodh",
+        "meaning": "Milk",
+        "example": "दूध पीना सेहतमंद है।",
+        "audio": "audio/hindi/doodh.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-college-1",
+    "language": "Hindi",
+    "category": "College",
+    "title": "College Life Vocabulary",
+    "level": "Intermediate",
+    "description": "Academic life terms in Hindi.",
+    "words": [
+      {
+        "native": "विद्यालय",
+        "romanized": "Vidyalaya",
+        "meaning": "College / School",
+        "example": "हम कॉलेज में पढ़ते हैं।",
+        "audio": "audio/hindi/vidyalaya.mp3"
+      },
+      {
+        "native": "किताब",
+        "romanized": "Kitab",
+        "meaning": "Book",
+        "example": "किताब मेज पर रखी है।",
+        "audio": "audio/hindi/kitab.mp3"
+      },
+      {
+        "native": "परीक्षा",
+        "romanized": "Pariksha",
+        "meaning": "Examination",
+        "example": "परीक्षा की तैयारी चल रही है।",
+        "audio": "audio/hindi/pariksha.mp3"
+      },
+      {
+        "native": "शिक्षक",
+        "romanized": "Shikshak",
+        "meaning": "Teacher",
+        "example": "शिक्षक ने अच्छा समझाया।",
+        "audio": "audio/hindi/shikshak.mp3"
+      },
+      {
+        "native": "गृहकार्य",
+        "romanized": "Grihakarya",
+        "meaning": "Homework / Assignment",
+        "example": "गृहकार्य पूरा हो गया है।",
+        "audio": "audio/hindi/grihakarya.mp3"
+      }
+    ]
+  },
+  {
+    "id": "hindi-routine-1",
+    "language": "Hindi",
+    "category": "Daily Routine",
+    "title": "Daily Routine Terms",
+    "level": "Intermediate",
+    "description": "Daily activity expressions in Hindi.",
+    "words": [
+      {
+        "native": "सुबह",
+        "romanized": "Subah",
+        "meaning": "Morning",
+        "example": "सुबह जल्दी उठना अच्छा है।",
+        "audio": "audio/hindi/subah.mp3"
+      },
+      {
+        "native": "शाम",
+        "romanized": "Shaam",
+        "meaning": "Evening",
+        "example": "शाम को पार्क में टहलें।",
+        "audio": "audio/hindi/shaam.mp3"
+      },
+      {
+        "native": "रात",
+        "romanized": "Raat",
+        "meaning": "Night",
+        "example": "रात को तारे चमकते हैं।",
+        "audio": "audio/hindi/raat.mp3"
+      },
+      {
+        "native": "काम",
+        "romanized": "Kaam",
+        "meaning": "Work",
+        "example": "अपना काम समय पर करें।",
+        "audio": "audio/hindi/kaam.mp3"
+      },
+      {
+        "native": "समय",
+        "romanized": "Samay",
+        "meaning": "Time",
+        "example": "समय बहुत कीमती है।",
+        "audio": "audio/hindi/samay.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-greetings-1",
+    "language": "Kannada",
+    "category": "Greetings",
+    "title": "Kannada Daily Greetings",
+    "level": "Beginner",
+    "description": "Learn polite greetings and introduction phrases in Kannada.",
+    "words": [
+      {
+        "native": "ನಮಸ್ಕಾರ",
+        "romanized": "Namaskara",
+        "meaning": "Hello / Greetings",
+        "example": "ನಮಸ್ಕಾರ, ನೀವು ಹೇಗಿದ್ದೀರ?",
+        "audio": "audio/kannada/namaskara.mp3"
+      },
+      {
+        "native": "ಧನ್ಯವಾದ",
+        "romanized": "Dhanyavaada",
+        "meaning": "Thank you",
+        "example": "ನಿಮ್ಮ ಸಹಾಯಕ್ಕೆ ಧನ್ಯವಾದ.",
+        "audio": "audio/kannada/dhanyavaada.mp3"
+      },
+      {
+        "native": "ಶುಭೋದಯ",
+        "romanized": "Shubhodaya",
+        "meaning": "Good Morning",
+        "example": "ಎಲ್ಲರಿಗೂ ಶುಭೋದಯ!",
+        "audio": "audio/kannada/shubhodaya.mp3"
+      },
+      {
+        "native": "ಮತ್ತೆ ಸಿಗೋಣ",
+        "romanized": "Matte Sigona",
+        "meaning": "See you again",
+        "example": "ನಾಳೆ ಮತ್ತೆ ಸಿಗೋಣ.",
+        "audio": "audio/kannada/matte-sigona.mp3"
+      },
+      {
+        "native": "ಕ್ಷಮಿಸಿ",
+        "romanized": "Kshamisi",
+        "meaning": "Excuse me / Sorry",
+        "example": "ಕ್ಷಮಿಸಿ, ತಡವಾಯಿತು.",
+        "audio": "audio/kannada/kshamisi.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-numbers-1",
+    "language": "Kannada",
+    "category": "Numbers",
+    "title": "Kannada Numbers (1 - 5)",
+    "level": "Beginner",
+    "description": "Counting 1 to 5 in Kannada.",
+    "words": [
+      {
+        "native": "ಒಂದು",
+        "romanized": "Ondu",
+        "meaning": "One (1)",
+        "example": "ನನ್ನ ಬಳಿ ಒಂದು ಪುಸ್ತಕವಿದೆ.",
+        "audio": "audio/kannada/ondu.mp3"
+      },
+      {
+        "native": "ಎರಡು",
+        "romanized": "Eradu",
+        "meaning": "Two (2)",
+        "example": "ಅವನಲ್ಲಿ ಎರಡು ಪೆನ್ನುಗಳಿವೆ.",
+        "audio": "audio/kannada/eradu.mp3"
+      },
+      {
+        "native": "ಮೂರು",
+        "romanized": "Mooru",
+        "meaning": "Three (3)",
+        "example": "ಮರದಲ್ಲಿ ಮೂರು ಹಕ್ಕಿಗಳಿವೆ.",
+        "audio": "audio/kannada/mooru.mp3"
+      },
+      {
+        "native": "ನಾಲ್ಕು",
+        "romanized": "Naalku",
+        "meaning": "Four (4)",
+        "example": "ಕಾರಿಗೆ ನಾಲ್ಕು ಚಕ್ರಗಳಿವೆ.",
+        "audio": "audio/kannada/naalku.mp3"
+      },
+      {
+        "native": "ಐದು",
+        "romanized": "Aidu",
+        "meaning": "Five (5)",
+        "example": "ಕೈಯಲ್ಲಿ ಐದು ಬೆರಳುಗಳಿವೆ.",
+        "audio": "audio/kannada/aidu.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-family-1",
+    "language": "Kannada",
+    "category": "Family",
+    "title": "Family Members in Kannada",
+    "level": "Beginner",
+    "description": "Words for family members in Kannada.",
+    "words": [
+      {
+        "native": "ಅಮ್ಮ",
+        "romanized": "Amma",
+        "meaning": "Mother",
+        "example": "ನನ್ನ ಅಮ್ಮ ಪ್ರೀತಿಯುಳ್ಳವರು.",
+        "audio": "audio/kannada/amma.mp3"
+      },
+      {
+        "native": "ಅಪ್ಪ",
+        "romanized": "Appa",
+        "meaning": "Father",
+        "example": "ನನ್ನ ಅಪ್ಪ ಕೆಲಸಕ್ಕೆ ಹೋಗಿದ್ದಾರೆ.",
+        "audio": "audio/kannada/appa.mp3"
+      },
+      {
+        "native": "ಅಣ್ಣ",
+        "romanized": "Anna",
+        "meaning": "Elder Brother",
+        "example": "ನನ್ನ ಅಣ್ಣ ಕಾಲೇಜಿಗೆ ಹೋಗುತ್ತಾನೆ.",
+        "audio": "audio/kannada/anna.mp3"
+      },
+      {
+        "native": "ಅಕ್ಕ",
+        "romanized": "Akka",
+        "meaning": "Elder Sister",
+        "example": "ನನ್ನ ಅಕ್ಕ ಹಾಡು ಹೇಳುತ್ತಾಳೆ.",
+        "audio": "audio/kannada/akka.mp3"
+      },
+      {
+        "native": "ಸ್ನೇಹಿತ",
+        "romanized": "Snehitha",
+        "meaning": "Friend",
+        "example": "ಅವನು ನನ್ನ ಉತ್ತಮ ಸ್ನೇಹಿತ.",
+        "audio": "audio/kannada/snehitha.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-food-1",
+    "language": "Kannada",
+    "category": "Food",
+    "title": "Food & Drink in Kannada",
+    "level": "Beginner",
+    "description": "Essential food items in Kannada.",
+    "words": [
+      {
+        "native": "ಊಟ",
+        "romanized": "Oota",
+        "meaning": "Meal / Food",
+        "example": "ಊಟ ತುಂಬಾ ಚೆನ್ನಾಗಿದೆ.",
+        "audio": "audio/kannada/oota.mp3"
+      },
+      {
+        "native": "ನೀರು",
+        "romanized": "Neeru",
+        "meaning": "Water",
+        "example": "ನನಗೆ ತಣ್ಣೀರು ಬೇಕು.",
+        "audio": "audio/kannada/neeru.mp3"
+      },
+      {
+        "native": "ಹಾಲು",
+        "romanized": "Haalu",
+        "meaning": "Milk",
+        "example": "ದಿನವೂ ಹಾಲು ಕುಡಿಯಿರಿ.",
+        "audio": "audio/kannada/haalu.mp3"
+      },
+      {
+        "native": "ತಿಂಡಿ",
+        "romanized": "Thindi",
+        "meaning": "Snack / Breakfast",
+        "example": "ಬೆಳಿಗ್ಗೆ ತಿಂಡಿ ತಿಂದೆ.",
+        "audio": "audio/kannada/thindi.mp3"
+      },
+      {
+        "native": "ಹಣ್ಣು",
+        "romanized": "Hannu",
+        "meaning": "Fruit",
+        "example": "ಸೇಬು ಉತ್ತಮ ಹಣ್ಣು.",
+        "audio": "audio/kannada/hannu.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-college-1",
+    "language": "Kannada",
+    "category": "College",
+    "title": "College & Campus Words",
+    "level": "Intermediate",
+    "description": "Vocabulary for students in Kannada.",
+    "words": [
+      {
+        "native": "ಕಾಲೇಜು",
+        "romanized": "Kaleju",
+        "meaning": "College",
+        "example": "ನಾವು ಕಾಲೇಜಿನಲ್ಲಿ ಓದುತ್ತಿದ್ದೇವೆ.",
+        "audio": "audio/kannada/kaleju.mp3"
+      },
+      {
+        "native": "ಪುಸ್ತಕ",
+        "romanized": "Pustaka",
+        "meaning": "Book",
+        "example": "ನನ್ನ ಬಳಿ ಹೊಸ ಪುಸ್ತಕವಿದೆ.",
+        "audio": "audio/kannada/pustaka.mp3"
+      },
+      {
+        "native": "ತರಗತಿ",
+        "romanized": "Tharagathi",
+        "meaning": "Classroom",
+        "example": "ತರಗತಿ ಪ್ರಾರಂಭವಾಗಿದೆ.",
+        "audio": "audio/kannada/tharagathi.mp3"
+      },
+      {
+        "native": "ಪರೀಕ್ಷೆ",
+        "romanized": "Parikshe",
+        "meaning": "Exam",
+        "example": "ನಾಳೆ ಗಣಿತ ಪರೀಕ್ಷೆ ಇದೆ.",
+        "audio": "audio/kannada/parikshe.mp3"
+      },
+      {
+        "native": "ಶಿಕ್ಷಕರು",
+        "romanized": "Shikshakaru",
+        "meaning": "Teachers",
+        "example": "ಶಿಕ್ಷಕರು ಪಾಠ ಮಾಡುತ್ತಿದ್ದಾರೆ.",
+        "audio": "audio/kannada/shikshakaru.mp3"
+      }
+    ]
+  },
+  {
+    "id": "kannada-routine-1",
+    "language": "Kannada",
+    "category": "Daily Routine",
+    "title": "Daily Routine Vocabulary",
+    "level": "Intermediate",
+    "description": "Common daily routine terms in Kannada.",
+    "words": [
+      {
+        "native": "ಬೆಳಿಗ್ಗೆ",
+        "romanized": "Beligge",
+        "meaning": "Morning",
+        "example": "ಬೆಳಿಗ್ಗೆ ತಂಪಾದ ಗಾಳಿ ಇದೆ.",
+        "audio": "audio/kannada/beligge.mp3"
+      },
+      {
+        "native": "ಸಂಜೆ",
+        "romanized": "Sanje",
+        "meaning": "Evening",
+        "example": "ಸಂಜೆ ಆಟವಾಡೋಣ.",
+        "audio": "audio/kannada/sanje.mp3"
+      },
+      {
+        "native": "ರಾತ್ರಿ",
+        "romanized": "Rathri",
+        "meaning": "Night",
+        "example": "ರಾತ್ರಿ ಬೇಗ ಮಲಗಿ.",
+        "audio": "audio/kannada/rathri.mp3"
+      },
+      {
+        "native": "ಕೆಲಸ",
+        "romanized": "Kelasa",
+        "meaning": "Work",
+        "example": "ನನ್ನ ಕೆಲಸ ಮುಗಿಯಿತು.",
+        "audio": "audio/kannada/kelasa.mp3"
+      },
+      {
+        "native": "ಸಮಯ",
+        "romanized": "Samaya",
+        "meaning": "Time",
+        "example": "ಸಮಯ ಅಮೂಲ್ಯವಾದದ್ದು.",
+        "audio": "audio/kannada/samaya.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-greetings-1",
+    "language": "English",
+    "category": "Greetings",
+    "title": "Basic Conversation & Greetings",
+    "level": "Beginner",
+    "description": "Master formal and informal greetings in English.",
+    "words": [
+      {
+        "native": "Hello",
+        "romanized": "Hello",
+        "meaning": "Universal friendly greeting",
+        "example": "Hello! How are you doing today?",
+        "audio": "audio/english/hello.mp3"
+      },
+      {
+        "native": "Welcome",
+        "romanized": "Welcome",
+        "meaning": "Greeting visitors or newcomers",
+        "example": "Welcome to VaakSiddhi language platform!",
+        "audio": "audio/english/welcome.mp3"
+      },
+      {
+        "native": "Pleased to meet you",
+        "romanized": "Pleased to meet you",
+        "meaning": "Formal polite expression when meeting someone",
+        "example": "Hello Rahul, pleased to meet you.",
+        "audio": "audio/english/pleased-to-meet-you.mp3"
+      },
+      {
+        "native": "Good Morning",
+        "romanized": "Good Morning",
+        "meaning": "Morning greeting",
+        "example": "Good morning! Wishing you a great day ahead.",
+        "audio": "audio/english/good-morning.mp3"
+      },
+      {
+        "native": "Thank you",
+        "romanized": "Thank you",
+        "meaning": "Expression of gratitude",
+        "example": "Thank you for your valuable guidance.",
+        "audio": "audio/english/thank-you.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-numbers-1",
+    "language": "English",
+    "category": "Numbers",
+    "title": "Numbers & Counting",
+    "level": "Beginner",
+    "description": "Master counting in English.",
+    "words": [
+      {
+        "native": "One",
+        "romanized": "One",
+        "meaning": "Number 1",
+        "example": "I have one final year project.",
+        "audio": "audio/english/one.mp3"
+      },
+      {
+        "native": "Two",
+        "romanized": "Two",
+        "meaning": "Number 2",
+        "example": "There are two seminars scheduled.",
+        "audio": "audio/english/two.mp3"
+      },
+      {
+        "native": "Three",
+        "romanized": "Three",
+        "meaning": "Number 3",
+        "example": "Three modules are ready.",
+        "audio": "audio/english/three.mp3"
+      },
+      {
+        "native": "Four",
+        "romanized": "Four",
+        "meaning": "Number 4",
+        "example": "We support four languages.",
+        "audio": "audio/english/four.mp3"
+      },
+      {
+        "native": "Five",
+        "romanized": "Five",
+        "meaning": "Number 5",
+        "example": "Earn five stars in your quiz.",
+        "audio": "audio/english/five.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-family-1",
+    "language": "English",
+    "category": "Family",
+    "title": "Family & Relationships",
+    "level": "Beginner",
+    "description": "Vocabulary for family relations in English.",
+    "words": [
+      {
+        "native": "Mother",
+        "romanized": "Mother",
+        "meaning": "Female parent",
+        "example": "My mother supports my education.",
+        "audio": "audio/english/mother.mp3"
+      },
+      {
+        "native": "Father",
+        "romanized": "Father",
+        "meaning": "Male parent",
+        "example": "My father works as an engineer.",
+        "audio": "audio/english/father.mp3"
+      },
+      {
+        "native": "Brother",
+        "romanized": "Brother",
+        "meaning": "Male sibling",
+        "example": "My brother plays badminton.",
+        "audio": "audio/english/brother.mp3"
+      },
+      {
+        "native": "Sister",
+        "romanized": "Sister",
+        "meaning": "Female sibling",
+        "example": "My sister is studying computer science.",
+        "audio": "audio/english/sister.mp3"
+      },
+      {
+        "native": "Friend",
+        "romanized": "Friend",
+        "meaning": "A companion",
+        "example": "A true friend gives great advice.",
+        "audio": "audio/english/friend.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-food-1",
+    "language": "English",
+    "category": "Food",
+    "title": "Food & Catering Vocabulary",
+    "level": "Beginner",
+    "description": "Dining and cuisine vocabulary.",
+    "words": [
+      {
+        "native": "Water",
+        "romanized": "Water",
+        "meaning": "Essential beverage",
+        "example": "Drink plenty of fresh water daily.",
+        "audio": "audio/english/water.mp3"
+      },
+      {
+        "native": "Breakfast",
+        "romanized": "Breakfast",
+        "meaning": "First meal of the day",
+        "example": "I ate a healthy breakfast today.",
+        "audio": "audio/english/breakfast.mp3"
+      },
+      {
+        "native": "Coffee",
+        "romanized": "Coffee",
+        "meaning": "A hot brewed beverage",
+        "example": "Would you like a cup of coffee?",
+        "audio": "audio/english/coffee.mp3"
+      },
+      {
+        "native": "Fruit",
+        "romanized": "Fruit",
+        "meaning": "Natural sweet plant product",
+        "example": "Fresh fruit provides vital vitamins.",
+        "audio": "audio/english/fruit.mp3"
+      },
+      {
+        "native": "Delicious",
+        "romanized": "Delicious",
+        "meaning": "Highly pleasant taste",
+        "example": "This home-cooked meal is delicious.",
+        "audio": "audio/english/delicious.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-college-1",
+    "language": "English",
+    "category": "College",
+    "title": "College & Academic Life",
+    "level": "Intermediate",
+    "description": "Essential English vocabulary for campus and studies.",
+    "words": [
+      {
+        "native": "Assignment",
+        "romanized": "Assignment",
+        "meaning": "Task or project given by a teacher",
+        "example": "I completed my final year project assignment.",
+        "audio": "audio/english/assignment.mp3"
+      },
+      {
+        "native": "Presentation",
+        "romanized": "Presentation",
+        "meaning": "Speech explaining a topic",
+        "example": "Our project presentation is scheduled tomorrow.",
+        "audio": "audio/english/presentation.mp3"
+      },
+      {
+        "native": "Library",
+        "romanized": "Library",
+        "meaning": "A building containing books",
+        "example": "Let us meet at the college library.",
+        "audio": "audio/english/library.mp3"
+      },
+      {
+        "native": "Laboratory",
+        "romanized": "Laboratory",
+        "meaning": "A room for practical experiment",
+        "example": "We performed practicals in the computer laboratory.",
+        "audio": "audio/english/laboratory.mp3"
+      },
+      {
+        "native": "Degree",
+        "romanized": "Degree",
+        "meaning": "Academic qualification",
+        "example": "I am completing my BCA degree.",
+        "audio": "audio/english/degree.mp3"
+      }
+    ]
+  },
+  {
+    "id": "english-routine-1",
+    "language": "English",
+    "category": "Daily Routine",
+    "title": "Daily Routine & Productivity",
+    "level": "Intermediate",
+    "description": "Phrases for scheduling and productivity.",
+    "words": [
+      {
+        "native": "Schedule",
+        "romanized": "Schedule",
+        "meaning": "A plan of procedures and times",
+        "example": "My daily study schedule is organized.",
+        "audio": "audio/english/schedule.mp3"
+      },
+      {
+        "native": "Productive",
+        "romanized": "Productive",
+        "meaning": "Achieving significant results",
+        "example": "I had a very productive practice session.",
+        "audio": "audio/english/productive.mp3"
+      },
+      {
+        "native": "Practice",
+        "romanized": "Practice",
+        "meaning": "Repeated exercise to build skill",
+        "example": "Daily speech practice builds fluency.",
+        "audio": "audio/english/practice.mp3"
+      },
+      {
+        "native": "Consistency",
+        "romanized": "Consistency",
+        "meaning": "Steadiness in behavior",
+        "example": "Consistency is key to mastering new languages.",
+        "audio": "audio/english/consistency.mp3"
+      },
+      {
+        "native": "Improvement",
+        "romanized": "Improvement",
+        "meaning": "Progressing to a better state",
+        "example": "Track your speech score improvement on the dashboard.",
+        "audio": "audio/english/improvement.mp3"
+      }
+    ]
+  }
+]
