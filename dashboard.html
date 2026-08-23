@@ -3,163 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VaakSiddhi - Adaptive Learner Dashboard</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>VaakSiddhi - Learning Analytics & Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- Top Announcement Bar -->
   <div class="top-announcement-bar">
-    ✨ Learner Dashboard • Skill Profiles, Progress Analytics & Adaptive Recommendations ✨
+    📊 Analytics Dashboard • Real-Time Speech Metrics, XP Progress & AI Coaching Insights 📊
   </div>
 
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="./index.html" class="nav-brand">
-      <span> VaakSiddhi</span>
+    <a href="index.html" class="nav-brand">
+      <span>🕉️ VaakSiddhi</span>
     </a>
     <div class="nav-links">
-      <a href="./index.html" class="nav-link">Home</a>
-      <a href="./literacy.html" class="nav-link">Literacy</a>
-      <a href="./speech.html" class="nav-link">Speech Practice</a>
-      <a href="./twisters.html" class="nav-link">Tongue Twisters</a>
-      <a href="./dashboard.html" class="nav-link active">Dashboard</a>
-      <a href="./premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
-      <a href="./login.html" class="nav-btn-inquire">Login / Switch ♥</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="literacy.html" class="nav-link">Literacy</a>
+      <a href="speech.html" class="nav-link">Speech Practice</a>
+      <a href="twisters.html" class="nav-link">Tongue Twisters</a>
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="premium.html" class="nav-link nav-premium-btn">💎 Premium</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+      <a href="login.html" class="nav-btn-inquire">Login / Switch ♥</a>
     </div>
   </nav>
 
   <div class="container">
 
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; flex-wrap:wrap; gap:16px;">
+    <!-- Header Stats Banner Card -->
+    <div class="card card-pink" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
       <div>
-        <span class="cursive-font" style="font-size:20px;">real connection, built to scale</span>
-        <h2 style="font-size:28px; color:#3d131f; margin:0;">📊 Adaptive Learner Dashboard</h2>
+        <span class="cursive-font" style="font-size:20px;">speech progress overview</span>
+        <h2 style="font-size:28px; color:#3d131f; margin:0;">📊 Learning Analytics Dashboard</h2>
       </div>
-      
-      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-        <div style="display:flex; align-items:center; gap:8px; background:#fffdf0; border:1.5px dashed #3d131f; padding:8px 16px; border-radius:30px; box-shadow:2px 2px 0px #3d131f;">
-          <span style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase;">Language:</span>
-          <select id="dash-language-select" style="border:none; background:transparent; font-weight:800; color:#3d131f; outline:none; font-size:14px; cursor:pointer;">
-            <option value="Marathi">Marathi</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Kannada">Kannada</option>
-            <option value="English">English</option>
-          </select>
-        </div>
 
-        <button id="reset-progress-btn" class="btn" style="background:#fee2e2; color:#991b1b; font-size:13px; font-weight:800; border:1.5px dashed #991b1b; padding:8px 16px; border-radius:30px; cursor:pointer;">
-          🔄 Reset Progress
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button id="dashboard-refresh-btn" class="btn btn-primary" style="padding:10px 20px; font-size:13px;">
+          🔄 Refresh Analytics
+        </button>
+        <button id="dashboard-export-btn" class="btn btn-outline-dashed" style="padding:10px 20px; font-size:13px; background:#ffffff;">
+          📥 Export Progress Report
         </button>
       </div>
     </div>
 
-    <!-- Quick Stats Grid -->
-    <div class="grid-4" style="margin-bottom:28px;">
-      <div class="polaroid-frame" style="padding:20px; text-align:left;">
-        <span style="font-size:28px;">⭐</span>
-        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Total XP</div>
-        <div id="dash-total-xp" style="font-size:24px; font-weight:800; color:#3d131f;">0 XP</div>
-        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">xoxo, XP</div>
+    <!-- Quick Overview Metric Cards Grid -->
+    <div class="grid-4" style="gap:14px; margin-bottom:24px;">
+      
+      <div style="background:#fffdf0; border:2px dashed #3d131f; padding:18px; border-radius:18px; box-shadow:3px 3px 0px #3d131f;">
+        <div style="font-size:12px; font-weight:800; color:#78263e; text-transform:uppercase;">🔥 Streak & Activity</div>
+        <div id="dash-streak-count" style="font-size:32px; font-weight:800; color:#3d131f; font-family:'Playfair Display', serif; margin:4px 0;">0 Days</div>
+        <div style="font-size:12px; color:#6b4c55; font-weight:600;">Daily practice consistency</div>
       </div>
 
-      <div class="polaroid-frame tilt-right" style="padding:20px; text-align:left;">
-        <span style="font-size:28px;">🛡️</span>
-        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Current Level</div>
-        <div id="dash-current-level" style="font-size:24px; font-weight:800; color:#3d131f;">Level 1</div>
-        <div id="dash-level-title" style="font-size:13px; color:#78263e; font-weight:800;">Beginner</div>
+      <div style="background:#fffdf0; border:2px dashed #3d131f; padding:18px; border-radius:18px; box-shadow:3px 3px 0px #3d131f;">
+        <div style="font-size:12px; font-weight:800; color:#78263e; text-transform:uppercase;">⭐ Total XP Earned</div>
+        <div id="dash-xp-count" style="font-size:32px; font-weight:800; color:#3d131f; font-family:'Playfair Display', serif; margin:4px 0;">0 XP</div>
+        <div style="font-size:12px; color:#6b4c55; font-weight:600;">Overall gamification rank</div>
       </div>
 
-      <div class="polaroid-frame tilt-left" style="padding:20px; text-align:left;">
-        <span style="font-size:28px;">🔥</span>
-        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Daily Streak</div>
-        <div id="dash-streak-count" style="font-size:24px; font-weight:800; color:#3d131f;">0 Days</div>
-        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">keep burning!</div>
+      <div style="background:#fffdf0; border:2px dashed #3d131f; padding:18px; border-radius:18px; box-shadow:3px 3px 0px #3d131f;">
+        <div style="font-size:12px; font-weight:800; color:#78263e; text-transform:uppercase;">🎯 Avg Clarity Score</div>
+        <div id="dash-clarity-score" style="font-size:32px; font-weight:800; color:#3d131f; font-family:'Playfair Display', serif; margin:4px 0;">-- %</div>
+        <div style="font-size:12px; color:#6b4c55; font-weight:600;">Speech pronunciation accuracy</div>
       </div>
 
-      <div class="polaroid-frame" style="padding:20px; text-align:left; background:#fffdf0;">
-        <span style="font-size:28px;">🎙️</span>
-        <div style="font-size:11px; font-weight:800; color:#6b4c55; text-transform:uppercase; margin-top:6px;">Daily Speaking Goal</div>
-        <div id="dash-speaking-goal-text" style="font-size:20px; font-weight:800; color:#706638; margin-top:2px;">0/1 Practice</div>
-        <div class="polaroid-caption" style="font-size:16px; margin-top:2px;">daily goal</div>
+      <div style="background:#fffdf0; border:2px dashed #3d131f; padding:18px; border-radius:18px; box-shadow:3px 3px 0px #3d131f;">
+        <div style="font-size:12px; font-weight:800; color:#78263e; text-transform:uppercase;">⏱️ Practiced Sessions</div>
+        <div id="dash-total-sessions" style="font-size:32px; font-weight:800; color:#3d131f; font-family:'Playfair Display', serif; margin:4px 0;">0</div>
+        <div style="font-size:12px; color:#6b4c55; font-weight:600;">Completed recordings</div>
       </div>
+
     </div>
 
-    <!-- Section: Subscription Status & Daily Limits Card -->
-    <div id="subscriptionStatusCard"></div>
-
-    <!-- Section: Personalized Adaptive Practice Recommendation Card -->
-    <div id="recommendedPractice"></div>
-
-    <!-- Section: Cultural Passport & Regional Stamps -->
-    <div id="culturalPassport"></div>
-
-    <!-- Section: Multilingual Skill Progress Profile -->
-    <div id="languageSkillProfile"></div>
-
-    <!-- Section: Speaking Improvement & Performance -->
-    <div id="speakingImprovement"></div>
-
-    <!-- Detailed Performance Grid -->
-    <div class="grid-2" style="margin-bottom:28px;">
+    <!-- Main Analytics Charts & Progress Split Grid -->
+    <div class="grid-2" style="gap:20px; margin-bottom:24px;">
+      
+      <!-- Fluency & Pace Growth Card -->
       <div class="card card-cream" style="margin:0;">
-        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">🧠 Quiz Performance</h3>
-        <div style="display:flex; justify-content:space-between; margin-bottom:16px; background:#ffffff; border:1.5px dashed #3d131f; padding:14px; border-radius:16px;">
-          <div>
-            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Quizzes Completed</span>
-            <div id="dash-quizzes-count" style="font-size:22px; font-weight:800; color:#3d131f;">0</div>
-          </div>
-          <div>
-            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Avg Accuracy</span>
-            <div id="dash-avg-quiz-score" style="font-size:22px; font-weight:800; color:#1e40af;">0%</div>
-          </div>
+        <h3 style="font-size:20px; color:#3d131f; margin:0 0 12px 0; font-family:'Playfair Display', serif;">📈 Speech Pace & Fluency Trends</h3>
+        <p style="font-size:13px; color:#6b4c55; margin-bottom:16px;">Tracks your average words-per-minute (WPM) and filler word frequency across recent sessions.</p>
+        
+        <div id="fluency-chart-container" style="background:#ffffff; border:1.5px dashed #3d131f; border-radius:16px; padding:20px; text-align:center; min-height:180px; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+          <div style="font-size:36px; margin-bottom:6px;">📊</div>
+          <div style="font-size:14px; font-weight:700; color:#3d131f;">Complete practice sessions to view fluency charts</div>
         </div>
-        <canvas id="quiz-chart-canvas" width="450" height="150" style="width:100%; height:150px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
       </div>
 
-      <div class="card card-pink" style="margin:0;">
-        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">🎙️ Speech Evaluation History</h3>
-        <div style="display:flex; justify-content:space-between; margin-bottom:16px; background:#ffffff; border:1.5px dashed #3d131f; padding:14px; border-radius:16px;">
-          <div>
-            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Speaking Practices</span>
-            <div id="dash-speech-count" style="font-size:22px; font-weight:800; color:#3d131f;">0</div>
-          </div>
-          <div>
-            <span style="font-size:12px; font-weight:800; color:#6b4c55; text-transform:uppercase;">Avg Speech Score</span>
-            <div id="dash-avg-speech-score" style="font-size:22px; font-weight:800; color:#166534;">0/100</div>
-          </div>
-        </div>
-        <canvas id="speech-chart-canvas" width="450" height="150" style="width:100%; height:150px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
-      </div>
-    </div>
-
-    <!-- Canvas Charts & Activity Feed Row -->
-    <div class="grid-2" style="margin-bottom:28px;">
-      <div class="card card-blue" style="margin:0;">
-        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">📈 XP Progress & Goals</h3>
-        <canvas id="xp-chart-canvas" width="450" height="100" style="width:100%; height:100px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px; margin-bottom:16px;"></canvas>
-        <canvas id="activity-chart-canvas" width="450" height="100" style="width:100%; height:100px; background:#ffffff; border-radius:14px; border:1px solid #3d131f; padding:10px;"></canvas>
-      </div>
-
+      <!-- Regional Mastery Progress -->
       <div class="card card-cream" style="margin:0;">
-        <h3 style="font-size:22px; margin-bottom:14px; color:#3d131f;">📜 Recent Activity Log</h3>
-        <div id="dash-activity-feed" style="max-height:240px; overflow-y:auto; padding-right:5px;"></div>
+        <h3 style="font-size:20px; color:#3d131f; margin:0 0 12px 0; font-family:'Playfair Display', serif;">🌐 Regional Script & Speech Breakdown</h3>
+        <p style="font-size:13px; color:#6b4c55; margin-bottom:16px;">Practice accuracy breakdown sorted by individual regional languages.</p>
+        
+        <div id="regional-mastery-list" style="display:flex; flex-direction:column; gap:10px;">
+          <!-- Content dynamically rendered via JS -->
+        </div>
       </div>
+
     </div>
 
-    <!-- Achievements Grid -->
-    <div class="card card-pink">
-      <h3 style="font-size:24px; margin-bottom:18px; color:#3d131f;">🏆 Badges & Achievements</h3>
-      <div id="dash-achievements-container" class="grid-3"></div>
+    <!-- Recent Speech History Table Card -->
+    <div class="card card-cream">
+      <h3 style="font-size:22px; color:#3d131f; margin:0 0 16px 0; font-family:'Playfair Display', serif;">📜 Recent Practice Session Logs</h3>
+      
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; text-align:left;">
+          <thead>
+            <tr style="border-bottom:2px solid #3d131f; font-size:12px; text-transform:uppercase; color:#78263e;">
+              <th style="padding:10px;">Date & Time</th>
+              <th style="padding:10px;">Module / Mode</th>
+              <th style="padding:10px;">Language</th>
+              <th style="padding:10px;">Score</th>
+              <th style="padding:10px;">WPM Pace</th>
+              <th style="padding:10px;">Filler Words</th>
+            </tr>
+          </thead>
+          <tbody id="dash-history-tbody" style="font-size:14px; color:#3d131f; font-weight:600;">
+            <tr>
+              <td colspan="6" style="padding:20px; text-align:center; color:#6b4c55;">No practice session logs recorded yet. Start practicing on the Literacy or Speech page!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </div>
 
-  <script src="./storage.js"></script>
-  <script src="./audioEngine.js"></script>
-  <script src="./profile.js"></script>
-  <script src="./adaptive.js"></script>
-  <script src="./subscription.js"></script>
-  <script src="./dashboard.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/audioEngine.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/adaptive.js"></script>
+  <script src="js/subscription.js"></script>
+  <script src="js/dashboard.js"></script>
 </body>
 </html>
