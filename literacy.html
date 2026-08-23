@@ -36,11 +36,11 @@
     <div class="card card-cream" style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between;">
       <div>
         <span class="cursive-font" style="font-size:20px;">interactive script learning</span>
-        <h2 style="font-size:26px; color:#3d131f; margin:0;">📚 Regional Script & Literacy Module</h2>
+        <h2 style="font-size:26px; color:#3d131f; margin:0; font-family:'Playfair Display', serif;">📚 Regional Script & Literacy Module</h2>
       </div>
 
       <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
-        <label style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase;">Select Language:</label>
+        <label for="literacy-language-select" style="font-size:12px; font-weight:800; color:#3d131f; text-transform:uppercase;">Select Language:</label>
         <select id="literacy-language-select" style="padding:10px 18px; border-radius:30px; border:1.5px dashed #3d131f; font-weight:700; font-size:14px; background:#fffdf0; color:#3d131f; outline:none; cursor:pointer; box-shadow:2px 2px 0px #3d131f;">
           <option value="Marathi">Marathi (मराठी)</option>
           <option value="Hindi">Hindi (हिंदी)</option>
@@ -85,7 +85,7 @@
           <button id="literacy-listen-btn" class="btn btn-primary" style="padding:8px 20px; font-size:14px;">
             🔊 Listen Audio
           </button>
-          <button id="literacy-slow-btn" class="btn btn-outline-dashed" style="padding:8px 18px; font-size:14px;">
+          <button id="literacy-slow-btn" class="btn btn-outline-dashed" style="padding:8px 18px; font-size:14px; background:#ffffff;">
             🐌 Slow Audio (0.7x)
           </button>
         </div>
@@ -93,7 +93,7 @@
 
       <!-- Voice Practice & Evaluation Interface -->
       <div style="background:#fffdf0; border:2px dashed #3d131f; border-radius:18px; padding:20px; margin-bottom:16px;">
-        <h4 style="margin:0 0 10px 0; font-size:18px; color:#3d131f; font-family:'Playfair Display', serif;">🎙️ Voice Pronunciation Practice</h4>
+        <h3 style="margin:0 0 10px 0; font-size:18px; color:#3d131f; font-family:'Playfair Display', serif;">🎙️ Voice Pronunciation Practice</h3>
         
         <div id="literacy-rec-status" style="display:none; color:#dc2626; font-weight:800; margin-bottom:8px; font-size:14px;">
           🔴 Listening... Speak clearly now!
@@ -121,7 +121,7 @@
 
       <!-- Navigation Between Lessons -->
       <div style="display:flex; justify-content:space-between; align-items:center;">
-        <button id="literacy-prev-btn" class="btn btn-outline-dashed" style="padding:8px 16px; font-size:13px;">
+        <button id="literacy-prev-btn" class="btn btn-outline-dashed" style="padding:8px 16px; font-size:13px; background:#ffffff;">
           👈 Previous
         </button>
         <span id="literacy-progress-text" style="font-size:13px; font-weight:800; color:#3d131f;">
@@ -137,27 +137,30 @@
     <!-- Category Filter Tabs & Grid Browser -->
     <div style="margin-top:28px;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
-        <h3 style="font-size:22px; color:#3d131f; margin:0;">📖 All Script Lessons</h3>
+        <h3 style="font-size:22px; color:#3d131f; margin:0; font-family:'Playfair Display', serif;">📖 All Script Lessons</h3>
         
         <div id="literacy-category-tabs" style="display:flex; gap:8px; flex-wrap:wrap;">
           <button data-cat="All" class="btn btn-primary cat-tab-btn" style="padding:6px 14px; font-size:12px;">All</button>
-          <button data-cat="Vowels" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px;">Vowels (स्वर)</button>
-          <button data-cat="Consonants" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px;">Consonants (व्यंजन)</button>
-          <button data-cat="Matras" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px;">Matras (मात्रा)</button>
-          <button data-cat="Words" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px;">Words (शब्द)</button>
+          <button data-cat="Vowels" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px; background:#ffffff;">Vowels (स्वर)</button>
+          <button data-cat="Consonants" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px; background:#ffffff;">Consonants (व्यंजन)</button>
+          <button data-cat="Matras" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px; background:#ffffff;">Matras (मात्रा)</button>
+          <button data-cat="Words" class="btn btn-outline-dashed cat-tab-btn" style="padding:6px 14px; font-size:12px; background:#ffffff;">Words (शब्द)</button>
         </div>
       </div>
 
-      <div id="literacy-lessons-grid" class="grid-3"></div>
+      <div id="literacy-lessons-grid" class="grid-3" style="gap:16px;"></div>
     </div>
 
   </div>
 
+  <!-- Shared Utility Scripts -->
   <script src="./js/storage.js"></script>
   <script src="./js/audioEngine.js"></script>
   <script src="./js/profile.js"></script>
   <script src="./js/adaptive.js"></script>
   <script src="./js/subscription.js"></script>
+  
+  <!-- Page-Specific Literacy Script -->
   <script src="./js/literacy.js"></script>
 </body>
 </html>
